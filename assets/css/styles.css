@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    background-color: #444B26;
+}
+
+/* https://nekocalc.com/px-to-rem-converter */
+h1 {
+    font-size: 3rem; /*48px*/
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;  /*32px*/
+}
+
+h3 {
+    font-size: 1.5rem;  /*24px*/
+}
+
+h4 {
+    font-size: 1.25rem;  /*20px*/
+}
+
+h5 {
+    font-size: 1.125rem;  /*18px*/
+}
+
+a, button {
+
+}
+
+p {
+    color: white;
+}
+
+/* Header / Nav */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+    height: 10vh; /* if change this, change nav height and button height */
+ }
+
+nav {
+    display: flex;
+    overflow: hidden;
+    background-color: #BFCEA6;
+    justify-content: space-between;
+    height: 10vh;  /* if change this, change header height and button height */
+}
+
+nav a {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    /* padding: 2vw; */
+    text-decoration: none;
+    /* min-width: 100px; */
+}
+
+nav a:hover, .dropdown:hover button {
+    background-color: #1F2E20;
+    color: white;
+}
+
+.right, .left {
+    display: flex;
+}
+
+.right {
+    padding-right: 10vw;
+}
+
+.left {
+    padding-left: 2vw;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown button { 
+    font-size: 1.7rem;
+    border: none;
+    outline: none;
+    color: black;
+    height: 10vh;  /* if change this, change nav height and header height */
+    background-color: #BFCEA6;
+}
+
+.links {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  
+}
+
+.links a {
+    float: none;
+    color: black;
+    padding: 2vw;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.logo {
+    height: 6vh;
+    padding: 1.5vh 0;
+    margin: 0;
+}
+
+.links a:hover {
+    background-color: #1F2E20;
+    color: white;
+}
+
+.dropdown:hover .links {
+    display: block;
+}
+
+/* Home page */
+.hero-section {
+    height: 90vh;
+    background-color:  white;
+}
+.bigtext {
+    font-size: 200px;
+    margin: 0;
+    text-align: center;
+    padding-top: 30vh;
+}
+
+/* Home Page - About Us Section */
+.about-us {
+    margin: 5vh 10vw;
+    color: white;
+}
+
+/* Home Page - Who Made Section */
+.who-made {
+    margin: 5vh 10vw;
+    color: white;
+}
+
+.person {
+    display: flex;
+    background-color: #EFB3B3;
+    margin: 2vw 0;
+    padding: 2vw;
+}
+
+.person-info {
+    padding: 2vw;
+    margin-left: 2vw;
+    color: black;
+}
+
+/* About Sections */
+.capitalize {
+    font-size: 3rem;
+}
+
+#expandC, #expandR, #expandA, #expandP {
+    padding-top: 2vh;
+}
+
+.bigPink {
+    color: #EFB3B3;
+    font-size: 3.5rem;
+}
+
+.bigWhite {
+    color: white;
+    font-size: 3.5rem;
+}
+
+
+
+
+
+
+
+/* Settings */
+.settings {
+    text-align: center;
+}
+
+/* References */
+.references {
+    color: white;
+}
+
+.references h1{
+    text-align: center;
+}
+
+.sources {
+    margin: 5vh 10vw;
+}
+
+.sources a {
+    color: white;
+}
