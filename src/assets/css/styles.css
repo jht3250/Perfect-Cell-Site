@@ -122,6 +122,43 @@ nav a:hover, .dropdown:hover button {
     display: block;
 }
 
+/* Footer */
+footer {
+    background-color: #BFCEA6;
+    padding: 2vw;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+.footer-row-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sec a {
+    text-decoration: none;
+}
+
+.footer-row-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 5vw;
+}
+
+.words {
+    text-align: center;
+}
+
 /* Home page */
 .hero-section {
     height: 90vh;
@@ -151,6 +188,11 @@ nav a:hover, .dropdown:hover button {
     background-color: #EFB3B3;
     margin: 2vw 0;
     padding: 2vw;
+}
+
+.person img {
+    width: 15vw;
+    height: auto;
 }
 
 .person-info {
