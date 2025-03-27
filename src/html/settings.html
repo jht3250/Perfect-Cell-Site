@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <nav> 
+        <nav>
             <div class="left">
                 <div class="dropdown">
-                    <button><a href="index.html" class="alt-a"><img src="assets/images/star_black.png" alt="logo" class="logo"></a></button>
+                    <button><a href="../../index.html" class="alt-a"><img src="../images/star_black.png" alt="logo" class="logo"></a></button>
                     <div class="links">
-                        <a href="index.html">Home</a>
+                        <a href="../../index.html">Home</a>
                         <a href="finalQuiz.html">Final Quiz</a>
                         <a href="settings.html">Settings</a>
                         <a href="references.html">References</a>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button><span class="capitalize">P</span>roximity</button>
+                    <button id="expandP">P</button>
                     <div class="links">
                         <a href="proximityAbout.html">About</a>
                         <a href="proximityPractice.html">Practice</a>
@@ -56,15 +56,20 @@
             </div>
         </nav>
     </header>
-    
-    <main>
-        <button>Try it for yourself!</button>
-        <section class="proximity-codepen">
 
-        </section>
-        <button>Quiz</button>
+    <main class="settings">
+        <h1>Settings</h1>
+        <h2>Select Language</h2>
+        <div id="google_translate_element"></div>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+    <script type="text/javascript" src="assets/js/languages.js"></script>
+
+    <h2>Select Display Mode</h2>
+    <section class="btn-background">
+        <button></button>
+    </section>
     </main>
 
-    
 </body>
 </html>
