@@ -204,6 +204,10 @@ footer h4 {
 }
 
 /* About Sections */
+.about {
+    margin: 10vw;
+}
+
 .capitalize {
     font-size: 3rem;
 }
