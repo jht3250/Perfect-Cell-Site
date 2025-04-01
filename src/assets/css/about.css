@@ -1,16 +1,23 @@
 /* ============================================== */
-/* About Styles                                   */
+/* Base Styles                                    */
+/* ============================================== */
+h2, h3 {
+    color: #EFB3B3;
+}
+
+/* ============================================== */
+/* Class/ID Selectors                             */
 /* ============================================== */
 .about {
-    margin: 10vw;
+    margin: 15vh 10vw;
 }
 
-.bigPink {
+.big-pink {
     color: #EFB3B3;
-    font-size: 3.5rem;
+    font-size: 2em;
+    text-transform: uppercase;
 }
 
-.bigWhite {
+.big-white {
     color: white;
-    font-size: 3.5rem;
 }
