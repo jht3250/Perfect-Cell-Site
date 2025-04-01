@@ -5,13 +5,13 @@ body {
     margin: 0;
     background-color: #444B26;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cantata One', sans-serif;
     margin: 0;
     padding: 0;
-    color: white;
 }
 
 /* https://nekocalc.com/px-to-rem-converter */
@@ -51,9 +51,10 @@ p {
 }
 
 /* ============================================== */
-/* Navbar Styles                                  */
+/* Nav Bar Styles                                 */
 /* ============================================== */
 header {
+    /* navbar on top of everything even when scrolling */
     position: sticky;
     top: 0;
     z-index: 1; 
@@ -62,87 +63,120 @@ header {
 
 nav {
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #BFCEA6;
     justify-content: space-between;
-    height: 10vh;  /* if change this, change header height and button height */
-}
-
-nav a {
-    font-size: 1.2rem;
-    color: white;
-    text-align: center;
-    /* padding: 2vw; */
-    text-decoration: none;
-    /* min-width: 100px; */
-}
-
-nav a:hover, .dropdown:hover button {
-    background-color: #1F2E20;
-    color: white;
-}
-
-.current {
-    font-size: 3rem;
-}
-
-.right, .left {
-    display: flex;
-}
-
-.right {
+    height: 10vh;           /* if change this, change header height and button height */
+    color: black;
+    
+    /* give some space on the sides */
+    padding-left: 2vw;
     padding-right: 10vw;
 }
 
-.left {
-    padding-left: 2vw;
-}
-
-.dropdown {
-    overflow: hidden;
-}
-
-.dropdown button { 
-    font-size: 1.7rem;
-    border: none;
-    outline: none;
-    color: black;
-    height: 10vh;  /* if change this, change nav height and header height */
-    background-color: #BFCEA6;
-}
-
-.links {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  
-}
-
-.links a {
-    float: none;
-    color: black;
-    padding: 2vw;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
+/* LOGO */
 .logo {
     height: 6vh;
     padding: 1.5vh 0;
     margin: 0;
 }
 
-.links a:hover {
+.logo:hover {
     background-color: #1F2E20;
-    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul {
+    display: flex;
+}
+
+.current {
+    font-size: 3rem;
+}
+
+.dropdown span { 
+    /* center text */
+    display: flex;
+    align-items: center;
+
+    /* text styles */
+    font-family: 'Cantata One', sans-serif;
+    font-size: 1.7rem;
+    height: 100%;
+}
+
+.dropdown>span {
+    /* show only the first letter */
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 0.5em;
+    transition: width 0.5s;
+}
+
+.dropdown span span {
+    /* hind the rest of the text */
+    display: none;
+    background-color: #1F2E20;
+    color: #f9f9f9;
+}
+
+.dropdown:hover span span {
+    /* show the rest of the text when hover */
+    display: flex;
+}
+
+.dropdown:hover #expandC, 
+.dropdown:hover #expandR, 
+.dropdown:hover #expandA, 
+.dropdown:hover #expandP {
+    /* show the rest of the text when hover */
+    width: 6em;
+    background-color: #1F2E20;
+    color: #f9f9f9;
+}
+
+.dropdown:hover #others {
+    /* hover styling */
+    background-color: #1F2E20;
+    color: #f9f9f9;
+}
+
+.links {
+    /* Dropdown container styles */
+    display: none;          /* hidden by default */
+    position: absolute;     /* Position the dropdown */
+    background-color: #f9f9f9; 
+    width: clamp(160px, 12vw, 200px);    /* TODO: NEED A BETTER WAY TO FIND WIDTH (JS) */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .dropdown:hover .links {
+    /* show the dropdown */
     display: block;
+}
+
+.links a {
+    /* Dropdown item styles */
+    /* float: none; */
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    padding: 15px;
+}
+
+.links a:hover {
+    color: white;
+    background-color: #1F2E20;
+    border: 1px solid #BFCEA6;
 }
 
 /* ============================================== */
@@ -154,7 +188,7 @@ footer {
 }
 
 footer h4 {
-    margin: 0;
+    color: black;
 }
 
 .footer-row-1 {
@@ -169,8 +203,10 @@ footer h4 {
     flex-direction: column;
 }
 
+/* TODO: NEED TO ADD HOVER STYLES */
 .footer-sec a {
     text-decoration: none;
+    color: black;
 }
 
 .footer-row-2 {
@@ -179,6 +215,7 @@ footer h4 {
 }
 
 .footer-logo {
+    padding-top: 5vh;
     width: 5vw;
     height: 5vw;
     background-color: #BFCEA6;

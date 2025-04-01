@@ -2,6 +2,7 @@
 /* Basic Selectors                                */
 /* ============================================== */
 h1 {
+    height: clamp(200px, 70vh, 500px);
     text-indent: -9999em;
     background: url(../images/banner.png) center no-repeat;
     background-size: contain;
@@ -24,14 +25,6 @@ h2 img {
 /* Hero */
 .hero-section {
     height: 90vh;
-}
-
-.bigtext {
-    font-size: 200px;
-    margin: 0;
-    text-align: center;
-    padding-top: 30vh;
-    color: #EFB3B3;
 }
 
 /* About Us Section */
