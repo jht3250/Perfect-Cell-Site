@@ -1,0 +1,18 @@
+/* ============================================== */
+/* References Styles                              */
+/* ============================================== */
+.references {
+    color: white;
+}
+
+.references h1{
+    text-align: center;
+}
+
+.sources {
+    margin: 5vh 10vw;
+}
+
+.sources a {
+    color: white;
+}
