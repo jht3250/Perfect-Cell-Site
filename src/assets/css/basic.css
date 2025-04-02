@@ -185,6 +185,7 @@ nav>ul {
 /* ============================================== */
 footer {
     background-color: #BFCEA6;
+    margin-top: 15vh;
     padding: 2vw;
 }
 
@@ -210,6 +211,10 @@ footer h4 {
     color: black;
 }
 
+.footer-sec a:hover {
+    color: white;
+}
+
 .footer-row-2 {
     display: flex;
     justify-content: center;
@@ -231,4 +236,5 @@ footer h4 {
 
 .copyright {
     text-align: center;
+    color: black;
 }
