@@ -51,6 +51,34 @@ p {
     line-height: 1.25em;
 }
 
+/* Button styles */
+button { 
+    font-family: 'Cantata One', sans-serif;
+    font-size: 1em;
+    padding: 15px 10px;
+    border-radius: 15px;
+    background-color: #BFCEA6;
+    color: black;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #444B26;
+    border-color: #444B26;
+    color: white;
+}
+
+button:active {
+    background-color: #EFB3B3;
+    border-color: #e88b8b;
+    color: black;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* ============================================== */
 /* Nav Bar Styles                                 */
 /* ============================================== */
