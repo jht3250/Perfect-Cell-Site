@@ -165,7 +165,7 @@ nav>ul {
 .dropdown:hover #expandA, 
 .dropdown:hover #expandP {
     /* show the rest of the text when hover */
-    width: 6em;
+    width: 100%;
     background-color: #1F2E20;
     color: #f9f9f9;
 }
@@ -180,8 +180,8 @@ nav>ul {
     /* Dropdown container styles */
     display: none;          /* hidden by default */
     position: absolute;     /* Position the dropdown */
-    background-color: #f9f9f9; 
-    width: clamp(160px, 12vw, 200px);    /* TODO: NEED A BETTER WAY TO FIND WIDTH (JS) */
+    background-color: #f9f9f9;
+    width: clamp(160px, 12vw, 200px);    /*TODO: NEED A BETTER WAY TO FIND WIDTH (JS)*/
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
