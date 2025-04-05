@@ -3,8 +3,10 @@ const showDropdown = (e) => {
     const links = dropdown.querySelector('.links');
 
     if (dropdown && links) {
-        const dropdownWidth = window.getComputedStyle(dropdown).width;
-        links.style.width = dropdownWidth;
+        setTimeout(() => {
+            const dropdownWidth = window.getComputedStyle(dropdown).width;
+            links.style.width = dropdownWidth;
+        }, 200);
     }
 };
 
