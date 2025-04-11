@@ -52,31 +52,32 @@ p {
 }
 
 /* Button styles */
-button { 
+a.button:link, a.button:visited { 
+    /* Remove initial a style */
+    display: block;
+    width: max-content;
+    text-decoration: none;
+
+    /* Font style */
     font-family: 'Cantata One', sans-serif;
     font-size: 1em;
-    padding: 15px 10px;
-    border-radius: 15px;
-    background-color: #BFCEA6;
     color: black;
+
+    /* Button styles */
+    background-color: #EFB3B3;
+    border-radius: 15px;
+    border: 1px solid #BFCEA6;
+    padding: 15px 10px;
     margin-bottom: 10px;
 }
 
-button:hover {
-    background-color: #444B26;
-    border-color: #444B26;
+a.button:hover {
+    background-color: #BFCEA6;
+}
+
+a.button:active {
+    background-color: #1F2E20;
     color: white;
-}
-
-button:active {
-    background-color: #EFB3B3;
-    border-color: #e88b8b;
-    color: black;
-}
-
-button a {
-    text-decoration: none;
-    color: inherit;
 }
 
 /* ============================================== */
@@ -92,7 +93,6 @@ header {
 
 nav {
     display: flex;
-    /* overflow: hidden; */
     background-color: #BFCEA6;
     justify-content: space-between;
     height: 10vh;           /* if change this, change header height and button height */
@@ -128,50 +128,29 @@ nav>ul {
     font-size: 3rem;
 }
 
-.dropdown span { 
+.dropdown {
     /* center text */
     display: flex;
     align-items: center;
 
+    /* used for dropdown list */
+    position: relative;
+
     /* text styles */
     font-family: 'Cantata One', sans-serif;
     font-size: 1.7rem;
-    height: 100%;
-}
-
-.dropdown>span {
-    /* show only the first letter */
     width: 1em;
-    overflow: hidden;
-    white-space: nowrap;
-    padding-left: 0.5em;
+    padding-left: 0.5em; 
     transition: width 0.5s;
 }
 
-.dropdown span span {
-    /* hind the rest of the text */
-    display: none;
-    background-color: #1F2E20;
-    color: #f9f9f9;
+.expanded {
+    /* when dropdown is expanded */
+    width: 6em;
 }
 
-.dropdown:hover span span {
-    /* show the rest of the text when hover */
-    display: flex;
-}
-
-.dropdown:hover #expandC, 
-.dropdown:hover #expandR, 
-.dropdown:hover #expandA, 
-.dropdown:hover #expandP {
-    /* show the rest of the text when hover */
-    width: 100%;
-    background-color: #1F2E20;
-    color: #f9f9f9;
-}
-
-.dropdown:hover #others {
-    /* hover styling */
+.dropdown:hover {
+    /* dropdown hover styling */
     background-color: #1F2E20;
     color: #f9f9f9;
 }
@@ -179,21 +158,21 @@ nav>ul {
 .links {
     /* Dropdown container styles */
     display: none;          /* hidden by default */
-    position: absolute;     /* Position the dropdown */
+    position: absolute;     /* Position the list */
     background-color: #f9f9f9;
-    width: clamp(160px, 12vw, 200px);    /*TODO: NEED A BETTER WAY TO FIND WIDTH (JS)*/
+    width: 6.5em;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-.dropdown:hover .links {
-    /* show the dropdown */
+.active {
     display: block;
+    left: 0;
+    top: 76px;
 }
 
 .links a {
     /* Dropdown item styles */
-    /* float: none; */
     display: block;
     font-size: 1.2rem;
     text-decoration: none;

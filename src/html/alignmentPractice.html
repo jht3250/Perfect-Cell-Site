@@ -1,119 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Cantata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../assets/css/basic.css">
-    <link rel="stylesheet" href="../assets/css/practice.css">
+        <link rel="stylesheet" href="../assets/css/basic.css">
+        <link rel="stylesheet" href="../assets/css/practice.css">
 
-    <title>Oh CRAP: Alignment - Practice</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <!-- cant find where this alt-a css rule is... -->
-            <a href="../../index.html" class="alt-a"><img src="../assets/images/star_black.png" alt="logo" class="logo"></a>
+        <title>Oh CRAP: Alignment - Practice</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <!-- cant find where this alt-a css rule is... -->
+                <a href="../../index.html" class="alt-a"><img src="../assets/images/star_black.png" alt="logo" class="logo"></a>
+                
+                <ul>
+                    <li class="dropdown" id="expandC">
+                        <span>C</span>
+                        <ul class="links">
+                            <li><a href="contrastAbout.html">About</a></li>
+                            <li><a href="contrastPractice.html">Practice</a></li>
+                            <li><a href="contrastQuiz.html">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="expandR">
+                        <span>R</span>
+                        <ul class="links">
+                            <li><a href="repetitionAbout.html">About</a></li>
+                            <li><a href="repetitionPractice.html">Practice</a></li>
+                            <li><a href="repetitionQuiz.html">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="expandA">
+                        <span>A</span>
+                        <ul class="links">
+                            <li><a href="alignmentAbout.html">About</a></li>
+                            <li><a href="alignmentPractice.html">Practice</a></li>
+                            <li><a href="alignmentQuiz.html">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="expandP">
+                        <span>P</span>
+                        <ul class="links">
+                            <li><a href="proximityAbout.html">About</a></li>
+                            <li><a href="proximityPractice.html">Practice</a></li>
+                            <li><a href="proximityQuiz.html">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="others">
+                        <span>.</span>
+                        <ul class="links">
+                            <li><a href="finalQuiz.html">Final Quiz</a></li>
+                            <li><a href="settings.html">Settings</a></li>
+                            <li><a href="references.html">References</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>Try it for yourself!</h1>
+
+            <section class="alignment-codepen">
+
+            </section>
             
-            <ul>
-                <li class="dropdown">
-                    <span id="expandC">C<span>ontrast</span></span>
-                    <ul class="links">
-                        <li><a href="contrastAbout.html">About</a></li>
-                        <li><a href="contrastPractice.html">Practice</a></li>
-                        <li><a href="contrastQuiz.html">Quiz</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span id="expandR">R<span>epetition</span></span>
-                    <ul class="links">
-                        <li><a href="repetitionAbout.html">About</a></li>
-                        <li><a href="repetitionPractice.html">Practice</a></li>
-                        <li><a href="repetitionQuiz.html">Quiz</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span id="expandA" class="current">A<span>lignment</span></span>
-                    <ul class="links">
-                        <li><a href="alignmentAbout.html">About</a></li>
-                        <li><a href="alignmentPractice.html">Practice</a></li>
-                        <li><a href="alignmentQuiz.html">Quiz</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span id="expandP">P<span>roximity</span></span>
-                    <ul class="links">
-                        <li><a href="proximityAbout.html">About</a></li>
-                        <li><a href="proximityPractice.html">Practice</a></li>
-                        <li><a href="proximityQuiz.html">Quiz</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span id="others">.</span>
-                    <ul class="links">
-                        <li><a href="finalQuiz.html">Final Quiz</a></li>
-                        <li><a href="settings.html">Settings</a></li>
-                        <li><a href="references.html">References</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <button>Try it for yourself!</button>
-        <section class="alignment-codepen">
+            <a href="alignmentQuiz.html" class="button">Take Quiz</a>
+        </main>
 
-        </section>
-        <button>Quiz</button>
-    </main>
+        <footer>
+            <section class="footer-row-1">
+                <section class="footer-sec">
+                    <h4>Contrast</h4>
+                    <a href="contrastAbout.html">About</a>
+                    <a href="contrastPractice.html">Practice</a>
+                    <a href="contrastQuiz.html">Quiz</a>
+                </section>
+                <section class="footer-sec">
+                    <h4>Repetition</h4>
+                    <a href="repetitionAbout.html">About</a>
+                    <a href="repetitionPractice.html">Practice</a>
+                    <a href="repetitionQuiz.html">Quiz</a>
+                </section>
+                <section class="footer-sec">
+                    <h4>Alignment</h4>
+                    <a href="alignmentAbout.html">About</a>
+                    <a href="alignmentPractice.html">Practice</a>
+                    <a href="alignmentQuiz.html">Quiz</a>
+                </section>
+                <section class="footer-sec">
+                    <h4>Proximity</h4>
+                    <a href="proximityAbout.html">About</a>
+                    <a href="proximityPractice.html">Practice</a>
+                    <a href="proximityQuiz.html">Quiz</a>
+                </section>
+                <section class="footer-sec">
+                    <h4>Other</h4>
+                    <a href="finalQuiz.html">Final Quiz</a>
+                    <a href="settings.html">Settings</a>
+                    <a href="references.html">References</a>
+                </section>
+            </section>
+            <section class="footer-row-2">
+                <a href="../../index.html" class="alt-a"><img src="../assets/images/star_black.png" alt="logo" class="footer-logo"></a>
+            </section>
+            <section class="copyright">
+                <p>The Perfect Cell @ 2025 | RIT</p>
+                <p>Golisano College of Computing and Information Sciences</p>
+            </section>
+        </footer>
 
-    <footer>
-        <section class="footer-row-1">
-            <section class="footer-sec">
-                <h4>Contrast</h4>
-                <a href="contrastAbout.html">About</a>
-                <a href="contrastPractice.html">Practice</a>
-                <a href="contrastQuiz.html">Quiz</a>
-            </section>
-            <section class="footer-sec">
-                <h4>Repetition</h4>
-                <a href="repetitionAbout.html">About</a>
-                <a href="repetitionPractice.html">Practice</a>
-                <a href="repetitionQuiz.html">Quiz</a>
-            </section>
-            <section class="footer-sec">
-                <h4>Alignment</h4>
-                <a href="alignmentAbout.html">About</a>
-                <a href="alignmentPractice.html">Practice</a>
-                <a href="alignmentQuiz.html">Quiz</a>
-            </section>
-            <section class="footer-sec">
-                <h4>Proximity</h4>
-                <a href="proximityAbout.html">About</a>
-                <a href="proximityPractice.html">Practice</a>
-                <a href="proximityQuiz.html">Quiz</a>
-            </section>
-            <section class="footer-sec">
-                <h4>Other</h4>
-                <a href="finalQuiz.html">Final Quiz</a>
-                <a href="settings.html">Settings</a>
-                <a href="references.html">References</a>
-            </section>
-        </section>
-        <section class="footer-row-2">
-            <a href="../../index.html" class="alt-a"><img src="../assets/images/star_black.png" alt="logo" class="footer-logo"></a>
-        </section>
-        <section class="copyright">
-            <p>The Perfect Cell @ 2025 | RIT</p>
-            <p>Golisano College of Computing and Information Sciences</p>
-        </section>
-    </footer>
-
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-    </script>
-    <script type="text/javascript" src="../assets/js/languages.js"></script>
-</body>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript" src="../assets/js/languages.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
 </html>
