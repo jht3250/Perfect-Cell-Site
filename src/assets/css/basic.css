@@ -124,11 +124,6 @@ nav>ul {
     display: flex;
 }
 
-/* #expandC span.current::after {
-    content: 'ontrast';
-    width: 6em;
-} */
-
 .dropdown {
     /* center text */
     display: flex;
@@ -141,6 +136,7 @@ nav>ul {
     font-family: 'Cantata One', sans-serif;
     font-size: 1.7rem;
     width: 1em;
+    /* width: fit-content; */
     padding-left: 0.5em; 
     transition: width 0.5s;
 }

@@ -1,11 +1,12 @@
 const updateDropdown = (ele, updateText) => {
+    // if (!ele.children[0].classList.contains('current')) ele.classList.remove('expanded');
+
     const links = ele.querySelector('.links');
     links.classList.toggle('active');
 
-    // if (!ele.children[0].classList.includes('current')) {
-        ele.children[0].innerText = updateText;
-        ele.classList.toggle('expanded');
-    // }
+    ele.classList.toggle('expanded');
+    // if (ele.children[0].classList.contains('current') && updateText.length === 1) return;
+    ele.children[0].innerText = updateText;
 }
 
 // Contrast Dropdown
