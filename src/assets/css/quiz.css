@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 
 /* Quiz Covers */
 .card {
     display: none;
 }
 
+=======
+.question {
+    border: solid black 5px;
+    margin: 20px;
+}
+>>>>>>> 1ad99b5f96fbd690d84a96b00c29238fc4845954

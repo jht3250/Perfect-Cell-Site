@@ -1,9 +1,11 @@
 const updateDropdown = (ele, updateText) => {
-    ele.children[0].innerText = updateText;
-    ele.classList.toggle('expanded');
-
     const links = ele.querySelector('.links');
     links.classList.toggle('active');
+
+    // if (!ele.children[0].classList.includes('current')) {
+        ele.children[0].innerText = updateText;
+        ele.classList.toggle('expanded');
+    // }
 }
 
 // Contrast Dropdown

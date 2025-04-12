@@ -124,9 +124,10 @@ nav>ul {
     display: flex;
 }
 
-.current {
-    font-size: 3rem;
-}
+/* #expandC span.current::after {
+    content: 'ontrast';
+    width: 6em;
+} */
 
 .dropdown {
     /* center text */
@@ -168,7 +169,7 @@ nav>ul {
 .active {
     display: block;
     left: 0;
-    top: 76px;
+    top: 10vh;
 }
 
 .links a {
