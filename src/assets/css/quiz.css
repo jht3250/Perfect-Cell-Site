@@ -3,14 +3,12 @@ body{
     
 }
 
-<<<<<<< HEAD
 
 /* Quiz Covers */
 .card {
     display: none;
 }
 
-=======
 .question {
     border: solid black 5px;
     margin: auto;
@@ -28,4 +26,3 @@ form {
 p {
     margin: 10px
 }
->>>>>>> 1ad99b5f96fbd690d84a96b00c29238fc4845954
