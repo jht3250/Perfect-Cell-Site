@@ -1,4 +1,22 @@
+body{
+    justify-content: center;
+    
+}
+
 .question {
     border: solid black 5px;
-    margin: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+    flex-wrap: wrap;
+    width: 800px;
+}
+
+form {
+    margin: 10px;
+}
+
+p {
+    margin: 10px
 }
