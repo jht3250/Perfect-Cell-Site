@@ -52,7 +52,7 @@ p {
 }
 
 /* Button styles */
-a.button:link, a.button:visited { 
+button, a.button:link, a.button:visited { 
     /* Remove initial a style */
     display: block;
     width: max-content;
@@ -71,11 +71,11 @@ a.button:link, a.button:visited {
     margin-bottom: 10px;
 }
 
-a.button:hover {
+button:hover, a.button:hover {
     background-color: #BFCEA6;
 }
 
-a.button:active {
+button:active, a.button:active {
     background-color: #1F2E20;
     color: white;
 }
@@ -209,7 +209,6 @@ footer h4 {
     flex-direction: column;
 }
 
-/* TODO: NEED TO ADD HOVER STYLES */
 .footer-sec a {
     text-decoration: none;
     color: black;
