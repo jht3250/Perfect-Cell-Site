@@ -9,6 +9,6 @@
         <link rel="stylesheet" href="<?php echo $path; ?>src/assets/css/basic.css">
         <?php echo $cssFiles; ?>
 
-        <title>CRAP - <?php echo $title; ?></title>
+        <title><?php echo $title; ?></title>
     </head>
     <body>
