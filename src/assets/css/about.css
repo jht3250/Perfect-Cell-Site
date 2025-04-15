@@ -94,3 +94,15 @@ h2, h3 {
     display: block;
     margin: 0 0 0 auto;
 }
+
+@media screen and (max-width: 480px) {
+    .big-pink{
+        font-size: 1em;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .big-pink{
+        font-size: 1em;
+    }
+  }
