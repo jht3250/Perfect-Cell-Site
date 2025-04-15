@@ -17,24 +17,39 @@
     <div class="question">
         <p>True or False, the site should be aligned in a way that guides the users eyes down the page naturally.</p>
         <form>
-            <input type="radio" id="true" name="impliment" value="t">
-            <label for="true">True</label>
-            <input type="radio" id="false" name="impliment" value="f">
-            <label for="false">False</label>
+            <div>
+                <input type="radio" id="true" name="implement" value="t">
+                <label for="true">True</label>
+            </div>
+            <div>
+                <input type="radio" id="false" name="implement" value="f">
+                <label for="false">False</label>
+            </div>
+
+            <button id="Submit">Submit</button>
         </form>
     </div>
     
     <div class="question">
         <p>When is the best time to use center alignment for text?</p>
         <form>
-            <input type="radio" id="paragraph" name="contrast" value="paragraphs">
-            <label for="paragraph">For long Paragraphs</label>
-            <input type="radio" id="handt" name="contrast" value="handTitle">
-            <label for="repetitive">Headers and titles</label>
-            <input type="radio" id="imgdesc" name="contrast" value="img">
-            <label for="imgdesc">Image descriptions</label>
-            <input type="radio" id="quotes" name="contrast" value="quote">
-            <label for="quotes">For quotes</label>
+            <div>
+                <input type="radio" id="paragraphs" name="contrast" value="paragraphs">
+                <label for="paragraphs">For long Paragraphs</label>
+            </div>
+            <div>
+                <input type="radio" id="headerTitle" name="contrast" value="headerTitle">
+                <label for="headerTitle">Headers and titles</label>
+            </div>
+            <div>
+                <input type="radio" id="imgDesc" name="contrast" value="imgDesc">
+                <label for="imgDesc">Image descriptions</label>
+            </div>
+            <div>
+                <input type="radio" id="quotes" name="contrast" value="quotes">
+                <label for="quotes">For quotes</label>
+            </div>
+        
             <button id="Submit">Submit</button>
         </form>
     </div>
@@ -42,8 +57,11 @@
     <div class="question">
         <p>You are aligning a large paragraph of text for your website. It should be _______ aligned.</p>
         <form>
-            <label for="answer">Answer:</label><br>
-            <input type="text" id="answer" name="answer">
+            <div>
+                <label for="answer">Answer:</label>
+                <input type="text" id="answer" name="answer">
+            </div>
+            
             <button id="Submit">Submit</button>
         </form>
     </div>

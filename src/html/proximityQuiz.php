@@ -17,8 +17,11 @@
     <div class="question">
         <p>Items that are grouped together are considered in the same part of the visual ___________</p>
         <form>
-            <label for="answer">Answer:</label><br>
-            <input type="text" id="answer" name="answer">
+            <div>
+                <label for="answer">Answer:</label>
+                <input type="text" id="answer" name="answer">
+            </div>
+
             <button id="Submit">Submit</button>
         </form>
     </div>
@@ -26,14 +29,23 @@
     <div class="question">
         <p>Why is it so important to space out items?</p>
         <form>
-            <input type="radio" id="better" name="contrast" value="Looks">
-            <label for="better">It looks better</label>
-            <input type="radio" id="space" name="contrast" value="scroll">
-            <label for="space">To give the user more space to scroll</label>
-            <input type="radio" id="items" name="contrast" value="groups">
-            <label for="items">So items of different groups do not interfere with others</label>
-            <input type="radio" id="pile" name="contrast" value="up">
-            <label for="pile">Don't worry, let them pile up</label>
+            <div>
+                <input type="radio" id="better" name="contrast" value="Looks">
+                <label for="better">It looks better</label>
+            </div>
+            <div>
+                <input type="radio" id="space" name="contrast" value="scroll">
+                <label for="space">To give the user more space to scroll</label>
+            </div>
+            <div>
+                <input type="radio" id="items" name="contrast" value="groups">
+                <label for="items">So items of different groups do not interfere with others</label>
+            </div>
+            <div>
+                <input type="radio" id="pile" name="contrast" value="up">
+                <label for="pile">Don't worry, let them pile up</label>
+            </div>
+            
             <button id="Submit">Submit</button>
         </form>
     </div>
@@ -41,14 +53,23 @@
     <div class="question">
         <p>If images are too close together you should:</p>
         <form>
-            <input type="radio" id="breaks" name="contrast" value="sep">
-            <label for="breaks">Use breaks to separate them</label>
-            <input type="radio" id="margins" name="contrast" value="marg">
-            <label for="margins">Add margins or padding to each image</label>
-            <input type="radio" id="hope" name="contrast" value="itself">
-            <label for="hope">Hope it fixes itself on the user screen</label>
-            <input type="radio" id="positioning" name="contrast" value="change">
-            <label for="positioning">Change the positioning of one</label>
+            <div>
+                <input type="radio" id="breaks" name="contrast" value="sep">
+                <label for="breaks">Use breaks to separate them</label>
+            </div>
+            <div>
+                <input type="radio" id="margins" name="contrast" value="marg">
+                <label for="margins">Add margins or padding to each image</label>
+            </div>
+            <div>
+                <input type="radio" id="hope" name="contrast" value="itself">
+                <label for="hope">Hope it fixes itself on the user screen</label>
+            </div>
+            <div>
+                <input type="radio" id="positioning" name="contrast" value="change">
+                <label for="positioning">Change the positioning of one</label>
+            </div>
+            
             <button id="Submit">Submit</button>
         </form>
     </div>
