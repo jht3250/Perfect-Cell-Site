@@ -48,11 +48,38 @@ h2 img {
 
 .person img {
     width: 15vw;
-    height: auto;
+    height: 20vw;
+    margin: auto 0;
+
 }
 
 .person-info {
     padding: 2vw;
     margin-left: 2vw;
     color: black;
+}
+
+@media screen and (max-width: 760px) {
+    .person {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .person img {
+        width: 30vw;
+        height: 40vw;
+        margin: auto auto;
+    
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .person {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .person img {
+        width: 40vw;
+        height: 60vw;
+        margin: auto auto;
+    }
 }
