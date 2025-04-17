@@ -14,6 +14,6 @@
 
     </section>
 
-    <a href="proximityQuiz.html" class="button">Take Quiz</a>
+    <a href="proximityQuiz.php" class="button">Take Quiz</a>
 </main>
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>

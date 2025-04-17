@@ -85,6 +85,6 @@
         </section>
     </section>
 
-    <a class="button practice" href="proximityPractice.html">Practice</a>
+    <a class="button practice" href="proximityPractice.php">Practice</a>
 </main>
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>

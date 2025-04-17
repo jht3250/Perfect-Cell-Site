@@ -94,6 +94,6 @@
         </section>
     </section>
 
-    <a class="button practice" href="alignmentPractice.html">Practice</a>
+    <a class="button practice" href="alignmentPractice.php">Practice</a>
 </main>   
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>
