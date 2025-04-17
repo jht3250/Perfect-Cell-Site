@@ -16,11 +16,11 @@
         <p>True or False, the site should be aligned in a way that guides the users eyes down the page naturally.</p>
         <form>
             <div>
-                <input type="radio" id="true" name="implement" value="t">
+                <input type="radio" id="true" name="implement" value="correct">
                 <label for="true">True</label>
             </div>
             <div>
-                <input type="radio" id="false" name="implement" value="f">
+                <input type="radio" id="false" name="implement" value="incorrect">
                 <label for="false">False</label>
             </div>
 
@@ -32,19 +32,19 @@
         <p>When is the best time to use center alignment for text?</p>
         <form>
             <div>
-                <input type="radio" id="paragraphs" name="contrast" value="paragraphs">
+                <input type="radio" id="paragraphs" name="contrast" value="incorrect">
                 <label for="paragraphs">For long Paragraphs</label>
             </div>
             <div>
-                <input type="radio" id="headerTitle" name="contrast" value="headerTitle">
+                <input type="radio" id="headerTitle" name="contrast" value="correct">
                 <label for="headerTitle">Headers and titles</label>
             </div>
             <div>
-                <input type="radio" id="imgDesc" name="contrast" value="imgDesc">
+                <input type="radio" id="imgDesc" name="contrast" value="incorrect">
                 <label for="imgDesc">Image descriptions</label>
             </div>
             <div>
-                <input type="radio" id="quotes" name="contrast" value="quotes">
+                <input type="radio" id="quotes" name="contrast" value="incorrect">
                 <label for="quotes">For quotes</label>
             </div>
         

@@ -128,14 +128,32 @@ h2, h3 {
     margin: 0 0 0 auto;
 }
 
+@media screen and (max-width: 920px) {
+    .big-pink{
+       font-size: 1.9em;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .big-pink{
+        font-size: 1.5em;
+    }
+
+    .example img {
+        width: 80vw;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .big-pink{
+       font-size: 1.2em;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .big-pink{
-        font-size: 1em;
+        font-size: 0.7em;
     }
-  }
-
-  @media screen and (max-width: 760px) {
-    .big-pink{
-        font-size: 1em;
-    }
-  }
+}

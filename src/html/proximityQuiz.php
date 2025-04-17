@@ -28,19 +28,19 @@
         <p>Why is it so important to space out items?</p>
         <form>
             <div>
-                <input type="radio" id="better" name="contrast" value="Looks">
+                <input type="radio" id="better" name="contrast" value="incorrect">
                 <label for="better">It looks better</label>
             </div>
             <div>
-                <input type="radio" id="space" name="contrast" value="scroll">
+                <input type="radio" id="space" name="contrast" value="incorrect">
                 <label for="space">To give the user more space to scroll</label>
             </div>
             <div>
-                <input type="radio" id="items" name="contrast" value="groups">
+                <input type="radio" id="items" name="contrast" value="correct">
                 <label for="items">So items of different groups do not interfere with others</label>
             </div>
             <div>
-                <input type="radio" id="pile" name="contrast" value="up">
+                <input type="radio" id="pile" name="contrast" value="incorrect">
                 <label for="pile">Don't worry, let them pile up</label>
             </div>
             
@@ -52,20 +52,20 @@
         <p>If images are too close together you should:</p>
         <form>
             <div>
-                <input type="radio" id="breaks" name="contrast" value="sep">
+                <input type="radio" id="breaks" name="contrast" value="incorrect">
                 <label for="breaks">Use breaks to separate them</label>
             </div>
             <div>
-                <input type="radio" id="margins" name="contrast" value="marg">
+                <input type="radio" id="margins" name="contrast" value="correct">
                 <label for="margins">Add margins or padding to each image</label>
             </div>
             <div>
-                <input type="radio" id="hope" name="contrast" value="itself">
+                <input type="radio" id="hope" name="contrast" value="incorrect">
                 <label for="hope">Hope it fixes itself on the user screen</label>
             </div>
             <div>
-                <input type="radio" id="positioning" name="contrast" value="change">
-                <label for="positioning">Change the positioning of one</label>
+                <input type="radio" id="positioning" name="contrast" value="incorrect">
+                <label for="positioning">Let it sit like that</label>
             </div>
             
             <button id="Submit">Submit</button>
