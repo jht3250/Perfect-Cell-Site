@@ -2,9 +2,7 @@
     $path = '';
     $title = 'Home';
     $cssFiles = '<link rel="stylesheet" href="src/assets/css/home.css">';
-    $jsFiles = '<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                <script type="text/javascript" src="src/assets/js/languages.js"></script>
-                <script src="src/assets/js/main.js"></script>';
+    $jsFiles = '';
 
     require_once('src/assets/inc/head.inc.php');
     require_once('src/assets/inc/header.inc.php');

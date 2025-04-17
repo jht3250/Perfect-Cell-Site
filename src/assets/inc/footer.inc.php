@@ -46,6 +46,9 @@
             </section>
         </footer>
         
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript" src="<?php echo $path; ?>src/assets/js/languages.js"></script>
+        <script src="<?php echo $path; ?>src/assets/js/nav.js"></script>
         <?php echo $jsFiles; ?>
     </body>
 </html>
