@@ -16,4 +16,6 @@
 
 .sources a {
     color: white;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
 }
