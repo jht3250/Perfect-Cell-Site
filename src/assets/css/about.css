@@ -41,6 +41,39 @@ h2, h3 {
     margin: 20px auto 0;
 }
 
+/* Interative examples */
+.one, .two {
+    display: none;
+    width: 80%;
+    height: 100px;
+    padding-top: 50px;
+    margin: auto;
+    background-color: #222222;
+    text-align: center;
+}
+
+.one {
+    color: #1F2E20;
+}
+
+.good.one {
+    color: #EFB3B3;
+}
+
+.two {
+    color: #981414;
+    background-color: #1F2E20;
+}
+
+.good.two {
+    color: #222222;
+    background-color: #BFCEA6;
+}
+
+.display {
+    display: block;
+}
+
 #text-example {
     display: flex;
     flex-wrap: nowrap;
