@@ -20,6 +20,7 @@ body{
     color: black;
     flex-wrap: wrap;
     width: 800px;
+    padding-left: 20px;
 }
 
 form {
