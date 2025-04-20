@@ -55,14 +55,17 @@
                 <input type="radio" id="breaks" name="contrast" value="incorrect">
                 <label for="breaks">Use breaks to separate them</label>
             </div>
+            <br>
             <div>
                 <input type="radio" id="margins" name="contrast" value="correct">
                 <label for="margins">Add margins or padding to each image</label>
             </div>
+            <br>
             <div>
                 <input type="radio" id="hope" name="contrast" value="incorrect">
                 <label for="hope">Hope it fixes itself on the user screen</label>
             </div>
+            <br>
             <div>
                 <input type="radio" id="positioning" name="contrast" value="incorrect">
                 <label for="positioning">Let it sit like that</label>

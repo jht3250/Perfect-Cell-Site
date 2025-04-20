@@ -35,14 +35,17 @@
                 <input type="radio" id="paragraphs" name="contrast" value="incorrect">
                 <label for="paragraphs">For long Paragraphs</label>
             </div>
+            <br>
             <div>
                 <input type="radio" id="headerTitle" name="contrast" value="correct">
                 <label for="headerTitle">Headers and titles</label>
             </div>
+            <br>
             <div>
                 <input type="radio" id="imgDesc" name="contrast" value="incorrect">
                 <label for="imgDesc">Image descriptions</label>
             </div>
+            <br>
             <div>
                 <input type="radio" id="quotes" name="contrast" value="incorrect">
                 <label for="quotes">For quotes</label>

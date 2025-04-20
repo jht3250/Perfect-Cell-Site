@@ -67,14 +67,17 @@
                 <input type="checkbox" id="fonts" name="contrast" value="correct">
                 <label for="fonts">Fonts styles and text</label>
             </div>
+            <br>
             <div>
                 <input type="checkbox" id="shapes" name="contrast" value="correct">
                 <label for="shapes">UI patterns such as buttons and line breaks</label>
             </div>
+            <br>
             <div>
                 <input type="checkbox" id="colors" name="contrast" value="incorrect">
                 <label for="colors">Randomizing colors across each page</label>
             </div>
+            <br>
             <div>
                 <input type="checkbox" id="image" name="contrast" value="correct">
                 <label for="image">Consistent image types (e.g. cartoon or real-life)</label>
