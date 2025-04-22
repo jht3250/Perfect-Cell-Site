@@ -20,18 +20,15 @@
                 <label for="engagement">The page becomes more engaging</label>
             </div>
             <br>
-            <br>
             <div>
                 <input type="radio" id="details" name="implement" value="correct">
                 <label for="details">Important Details could get lost or overlooked</label>
             </div>
             <br>
-            <br>
             <div>
                 <input type="radio" id="navigate" name="implement" value="incorrect">
                 <label for="navigate">Users can navigate the page easier</label>
             </div>
-            <br>
             <br>
             <div>
                 <input type="radio" id="brand" name="implement" value="incorrect">
