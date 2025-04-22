@@ -52,7 +52,7 @@ p {
 }
 
 /* Button styles */
-button, a.button:link, a.button:visited { 
+button, .button, .button:link, .button:visited { 
     /* Remove initial a style */
     display: block;
     width: max-content;
@@ -71,11 +71,11 @@ button, a.button:link, a.button:visited {
     margin-bottom: 10px;
 }
 
-button:hover, a.button:hover {
+button:hover, .button:hover {
     background-color: #BFCEA6;
 }
 
-button:active, a.button:active {
+button:active, .button:active {
     background-color: #1F2E20;
     color: white;
 }
