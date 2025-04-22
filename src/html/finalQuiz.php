@@ -17,11 +17,11 @@
             <p>What does CRAP stand for?</p>
             <label for="C">C: </label>
             <input type="text" id="C" name="C">
-            <label for="R">C: </label>
+            <label for="R">R: </label>
             <input type="text" id="R" name="R">
-            <label for="A">C: </label>
+            <label for="A">A: </label>
             <input type="text" id="A" name="A">
-            <label for="P">C: </label>
+            <label for="P">P: </label>
             <input type="text" id="P" name="P">
             
             <button id="Submit">Submit</button>
