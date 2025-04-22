@@ -1,19 +1,12 @@
 <?php 
     $path = '../../';
     $title = 'Oh CRAP: Contrast - Practice';
-    $cssFiles = '<link rel="stylesheet" href="../assets/css/practice.css">';
-    $jsFiles = '';
+    $cssFiles = '<link rel="stylesheet" href="../assets/css/codeTest.css">';
+    $jsFiles = '<script src="../assets/js/codeTest.js"></script>';
+    $quizFile = 'contrastQuiz.php';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');
+    require_once($path . 'src/assets/inc/practice.inc.php'); 
+    require_once($path . 'src/assets/inc/footer.inc.php'); 
 ?>
-<main>
-    <h1>Try it for yourself!</h1>
-
-    <section class="contrast-codepen">
-
-    </section>
-
-    <a href="contrastQuiz.php" class="button">Take Quiz</a>
-</main>
-<?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>
