@@ -2,7 +2,7 @@
     $path = '../../';
     $title = 'Oh CRAP: Proxomity - About';
     $cssFiles = '<link rel="stylesheet" href="../assets/css/about.css">';
-    $jsFiles = '';
+    $jsFiles = '<script src="../assets/js/interactive.js"></script>';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');
@@ -72,17 +72,20 @@
         </ul>
     </section>
 
-    <section>
-        <section class="example interactive">
-            <button>Correct This!</button>
-            <img src="../assets/images/prox_img_3.jpg" alt="">
+    <section class="interactives">
+        <div>
+            <button class="interactive">Correct This!</button>
+            <img src="../assets/images/prox_img_3.jpg" alt="" class="bad display">
+            <img src="../assets/images/prox_img_4.jpg" alt="" class="good">
             <p>Be sure to use all possible space available for your content. Leave some white space, but not too much as to leave the page with blank spaces.</p>
-        </section>
-        <section class="example interactive">
-            <button>Correct This!</button>
-            <img src="../assets/images/prox_img_5.jpg" alt="">
+        </div>
+
+        <div>
+            <button class="interactive">Correct This!</button>
+            <img src="../assets/images/prox_img_5.jpg" alt="" class="bad display">
+            <img src="../assets/images/prox_img_6.jpg" alt="" class="good">
             <p>Allow for details and content of your website to have proper spacing as to not cram content together.</p>
-        </section>
+        </div>
     </section>
 
     <a class="button practice" href="proximityPractice.php">Practice</a>

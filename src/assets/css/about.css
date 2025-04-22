@@ -35,13 +35,19 @@ h2, h3 {
     margin: 0 auto;
 }
 
-.example p {
+.example p, .interactives p {
     width: 80%;
     text-align: center;
-    margin: 20px auto 0;
+    margin: 20px auto;
 }
 
 /* Interative examples */
+.interactives img {
+    width: 70%;
+    margin: 20px auto;
+    display: none;
+}
+
 .one, .two {
     display: none;
     width: 80%;
@@ -70,7 +76,7 @@ h2, h3 {
     background-color: #BFCEA6;
 }
 
-.display {
+.display, img.display {
     display: block;
 }
 

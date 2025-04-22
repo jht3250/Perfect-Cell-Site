@@ -2,7 +2,7 @@
     $path = '../../';
     $title = 'Oh CRAP: Repetition - About';
     $cssFiles = '<link rel="stylesheet" href="../assets/css/about.css">';
-    $jsFiles = '';
+    $jsFiles = '<script src="../assets/js/interactive.js"></script>';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');
@@ -65,16 +65,19 @@
         </ul>
     </section>
 
-    <section>
-        <section class="example interactive">
-            <button>Correct This!</button>
-            <img src="../assets/images/rep_img_3.jpg" alt="">
-        </section>
-        <section class="example interactive">
-            <button>Correct This!</button>
-            <img src="../assets/images/rep_img_5.jpg" alt="">
+    <section class="interactives">
+        <div>
+            <button class="interactive">Correct This!</button>
+            <img src="../assets/images/rep_img_3.jpg" alt="" class="bad display">
+            <img src="../assets/images/rep_img_4.jpg" alt="" class="good">
+        </div>
+
+        <div>
+            <button class="interactive">Correct This!</button>
+            <img src="../assets/images/rep_img_5.jpg" alt="" class="bad display">
+            <img src="../assets/images/rep_img_6.jpg" alt="" class="good">
             <p>Create and keep consistent patterns. Don't let things be chaotic.</p>
-        </section>
+        </div>
     </section>
 
     <a class="button practice" href="repetitionPractice.php">Practice</a>

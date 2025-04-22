@@ -2,7 +2,7 @@
     $path = '../../';
     $title = 'Oh CRAP: Alignment - About';
     $cssFiles = '<link rel="stylesheet" href="../assets/css/about.css">';
-    $jsFiles = '';
+    $jsFiles = '<script src="../assets/js/interactive.js"></script>';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');
@@ -81,17 +81,19 @@
         </ul>
     </section>
 
-    <section>
-        <section class="example interactive">
-            <button>Correct This!</button>
-            <img src="../assets/images/align_img_2.jpg" alt="">
-        </section>
+    <section class="interactives">
+        <div>
+            <button class="interactive">Correct This!</button>
+            <img src="../assets/images/align_img_2.jpg" alt="" class="bad display">
+            <img src="../assets/images/align_img_3.png" alt="" class="good">
+        </div>
 
-        <section class="example interactive">
-            <button>Correct This!</button>
-            <img src="../assets/images/align_img_4.jpg" alt="">
+        <div>
+            <button class="interactive">Correct This!</button>
+            <img src="../assets/images/align_img_4.jpg" alt="" class="bad display">
+            <img src="../assets/images/align_img_5.jpg" alt="" class="good">
             <p>Shapes and images should be arranged in an easy to spot pattern, and sorted as to not.</p>
-        </section>
+        </div>
     </section>
 
     <a class="button practice" href="alignmentPractice.php">Practice</a>
