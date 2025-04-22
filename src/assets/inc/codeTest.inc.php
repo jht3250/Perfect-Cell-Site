@@ -7,5 +7,5 @@
 
     <p>This Feature Is Only Available On Desktop Version : &#40;</p>
 
-    <a href="<?php echo $path; ?>assets/html/<?php echo $quizFile; ?>" class="button">Take Quiz</a>
+    <a href="<?php echo $quizFile; ?>" class="button">Take Quiz</a>
 </main>
