@@ -1,8 +1,9 @@
 <main>
-    <h1>Try it for yourself!</h1>
+    <h1>Try it yourself!</h1>
 
-    <section>
+    <section class="codepen">
         <!-- Code pen stuff here! -->
+        codepen
     </section>
 
     <p>This Feature Is Only Available On Desktop Version : &#40;</p>
