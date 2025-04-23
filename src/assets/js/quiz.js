@@ -2,21 +2,24 @@ let questions, indexList, questionNums, questionCount;
 let current = 0;
 
 const shift = (list, cur, dir = 'right') => {
-    if (dir === 'right' && cur != 0) {
-        list[cur - 1].classList.add('hidden');
-        indexList.children[1].children[cur - 1].classList.remove('curIndex');
+    if (dir === 'right') {
+        if (cur != 0) {
+            list[cur - 1].classList.add('hidden');
+            indexList.children[1].children[cur - 1].classList.remove('curIndex');
+        } else if (cur === 0) {
+            list[questionCount - 1].classList.add('hidden');
+            indexList.children[1].children[questionCount - 1].classList.remove('curIndex');
+        }
     }
-    if (dir === 'right' && cur === 0) {
-        list[questionCount - 1].classList.add('hidden');
-        indexList.children[1].children[questionCount - 1].classList.remove('curIndex');
-    }
-    if (dir === 'left' && cur != questionCount - 1) {
-        list[cur + 1].classList.add('hidden');
-        indexList.children[1].children[cur + 1].classList.remove('curIndex');
-    }
-    if (dir === 'left' && cur === questionCount - 1) {
-        list[0].classList.add('hidden');
-        indexList.children[1].children[0].classList.remove('curIndex');
+    
+    if (dir === 'left') {
+        if (cur != questionCount - 1) {
+            list[cur + 1].classList.add('hidden');
+            indexList.children[1].children[cur + 1].classList.remove('curIndex');
+        } else if (cur === questionCount - 1) {
+            list[0].classList.add('hidden');
+            indexList.children[1].children[0].classList.remove('curIndex');
+        }
     }
 
     list[cur].classList.remove('hidden');
@@ -53,6 +56,33 @@ const goRight = () => {
     shift(questions, current);
 }
 
-const checkAnswer = () => {
+const checkAnswer = (type) => {
+    let question = questions[current];
     
+    if (type === 'radio' || type === 'checkbox') {
+        let options = question.querySelectorAll('input');
+        
+        for (let option of options) {
+            if (option.checked) {
+                if (option.value === 'correct') {
+                    document.querySelector(`label[for="${option.id}"]`).classList.add('correct');
+                    if (type === 'radio') questionNums.children[current].classList.add('done');
+                } else {
+                    document.querySelector(`label[for="${option.id}"]`).classList.add('incorrect');
+                }
+            }
+        }
+
+        if (type === 'checkbox') {
+            let checkboxDone = true;
+            for (let option of options) {
+                if (option.value === 'correct' && !document.querySelector(`label[for="${option.id}"]`).classList.contains('correct')) {
+                    checkboxDone = false;
+                }
+            }
+            if (checkboxDone) questionNums.children[current].classList.add('done');
+        }
+    } else if (type === 'text') {
+
+    }
 };

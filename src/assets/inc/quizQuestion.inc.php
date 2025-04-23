@@ -14,5 +14,5 @@
             }
         }
     ?>
-    <button class="check">Check</button>
+    <button class="check" onclick="checkAnswer('<?php echo $questionType; ?>')">Check</button>
 </div>
