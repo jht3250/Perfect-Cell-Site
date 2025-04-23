@@ -2,7 +2,7 @@
     $path = '../../';
     $title = 'Oh CRAP: Proxomity - Quiz';
     $cssFiles = '<link rel="stylesheet" href="../assets/css/quiz.css">';
-    $jsFiles = '';
+    $jsFiles = '<script src="../assets/js/quiz.js"></script>';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');
@@ -11,12 +11,10 @@
     <section class="cover">
         <h1>Proximity Quiz</h1>
         <img src="../assets/images/prox_quiz_cover.jpg" alt="">
-        <button>Start</button>
+        <button class="start" onclick="startQuiz()">Start</button>
     </section>
 
     <?php
-        // name for question form
-        $questionName = 'proximity-q1';
         $question = 'Q1: Items that are grouped together are considered in the same part of the visual ___________';
         // text, radio, or checkbox
         $questionType = 'text';
@@ -25,8 +23,6 @@
         $options = [];      // not needed for text inputs, leave it empty
         require('../assets/inc/quizQuestion.inc.php');
 
-        // name for question form
-        $questionName = 'proximity-q2';
         $question = 'Q2: Why is it so important to space out items?';
         // text, radio, or checkbox
         $questionType = 'radio';
@@ -60,8 +56,6 @@
         ];
         require('../assets/inc/quizQuestion.inc.php');
 
-        // name for question form
-        $questionName = 'proximity-q3';
         $question = 'Q3: If images are too close together you should:';
         // text, radio, or checkbox
         $questionType = 'radio';
@@ -95,5 +89,11 @@
         ];
         require('../assets/inc/quizQuestion.inc.php');
     ?>
+
+    <div class="list hidden">
+        <span class="arrow" onclick="goLeft()">&lt;</span>
+        <span class="nums"></span>
+        <span class="arrow" onclick="goRight()">&gt;</span>
+    </div>
 </main>
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>

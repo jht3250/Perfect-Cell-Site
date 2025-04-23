@@ -11,12 +11,10 @@
     <section class="cover">
         <h1>Contrast Quiz</h1>
         <img src="../assets/images/contrast_quiz_cover.jpg" alt="">
-        <button onclick="startQuiz()">Start</button>
+        <button class="start" onclick="startQuiz()">Start</button>
     </section>
 
-    <?php 
-        // name for question form
-        $questionName = 'contrast-q1';
+    <?php
         $question = 'Q1: What could happen if contrast is not properly implemented?';
         // text, radio, or checkbox
         $questionType = 'radio';
@@ -50,8 +48,6 @@
         ];
         require('../assets/inc/quizQuestion.inc.php');
 
-        // name for question form
-        $questionName = 'contrast-q2';
         $question = 'Q2: Contrast is about making certain elements ______ from other elements to highlight important information.';
         // text, radio, or checkbox
         $questionType = 'radio';
@@ -85,8 +81,6 @@
         ];
         require('../assets/inc/quizQuestion.inc.php');
 
-        // name for question form
-        $questionName = 'contrast-q3';
         $question = 'Q3: Which of the following are ways to create contrast?';
         // text, radio, or checkbox
         $questionType = 'checkbox';
@@ -122,9 +116,9 @@
     ?>
 
     <div class="list hidden">
-        <span onclick="goLeft()">&lt;</span>
+        <span class="arrow" onclick="goLeft()">&lt;</span>
         <span class="nums"></span>
-        <span onclick="goRight()">&gt;</span>
+        <span class="arrow" onclick="goRight()">&gt;</span>
     </div>
 </main>
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>

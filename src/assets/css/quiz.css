@@ -6,10 +6,13 @@ body {
 }
 
 main {
-    margin: 20px 0;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    background-color: white;
 }
 
-button {
+button.start {
     position: absolute;
     top: 70%;
     left: 46%;
@@ -33,7 +36,6 @@ footer {
 .cover {
     display: block;
     position: relative;
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -46,14 +48,13 @@ footer {
     width: 100%;
 }
 
-/* Question styles */
+/* Question */
 .question {
     box-sizing: border-box;
     margin: auto;
-    background-color: white;
     color: #222;
-    width: 80%;
-    padding: 30px;
+    padding: 30px 30px 0;
+    min-height: 200px;
 }
 
 .question h2 {
@@ -61,14 +62,46 @@ footer {
     margin-bottom: 1rem;
 }
 
-.button {
-    margin-left: auto;
+.check {
+    margin: auto 0 0 auto;
 }
 
 .hidden {
     display: none;
 }
 
+/* Question index list */
+.arrow {
+    line-height: 2em;
+    color: #222;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #BFCEA6;
+    cursor: pointer;
+}
+
+.arrow:active {
+    color: white;
+    background-color: #EFB3B3;
+}
+
+.index {
+    display: inline-block;
+    margin: 0 5px;
+    color: #222;
+}
+
+.done {
+    color: #BFCEA6;
+}
+
+.curIndex {
+    color: #EFB3B3;
+}
+
+/* ============================================== */
+/* RWD                                            */
+/* ============================================== */
 @media screen and (max-width: 760px){
 
 }

@@ -2,7 +2,7 @@
     $path = '../../';
     $title = 'Oh CRAP: Alignment - Quiz';
     $cssFiles = '<link rel="stylesheet" href="../assets/css/quiz.css">';
-    $jsFiles = '';
+    $jsFiles = '<script src="../assets/js/quiz.js"></script>';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');
@@ -11,12 +11,10 @@
     <section class="cover">
         <h1>Alignment Quiz</h1>
         <img src="../assets/images/align_quiz_cover.jpg" alt="">
-        <button>Start</button>
+        <button class="start" onclick="startQuiz()">Start</button>
     </section>
 
     <?php 
-        // name for question form
-        $questionName = 'alignment-q1';
         $question = 'Q1: True or False, the site should be aligned in a way that guides the users eyes down the page naturally.';
         // text, radio, or checkbox
         $questionType = 'radio';
@@ -38,8 +36,6 @@
         ];
         require('../assets/inc/quizQuestion.inc.php');
 
-        // name for question form
-        $questionName = 'alignment-q2';
         $question = 'Q2: When is the best time to use center alignment for text?';
         // text, radio, or checkbox
         $questionType = 'radio';
@@ -73,8 +69,6 @@
         ];
         require('../assets/inc/quizQuestion.inc.php');
 
-        // name for question form
-        $questionName = 'alignment-q3';
         $question = 'Q3: You are aligning a large paragraph of text for your website. It should be _______ aligned.';
         // text, radio, or checkbox
         $questionType = 'text';
@@ -83,5 +77,11 @@
         $options = [];      // not needed for text inputs, leave it empty
         require('../assets/inc/quizQuestion.inc.php');
     ?>
+
+    <div class="list hidden">
+        <span class="arrow" onclick="goLeft()">&lt;</span>
+        <span class="nums"></span>
+        <span class="arrow" onclick="goRight()">&gt;</span>
+    </div>
 </main>
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>

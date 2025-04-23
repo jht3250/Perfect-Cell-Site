@@ -69,6 +69,8 @@ button, .button, .button:link, .button:visited {
     border: 1px solid #BFCEA6;
     padding: 15px 10px;
     margin-bottom: 10px;
+
+    cursor: pointer;
 }
 
 button:hover, .button:hover {

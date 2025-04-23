@@ -2,7 +2,7 @@
     $path = '../../';
     $title = 'Oh CRAP: Repetition - Quiz';
     $cssFiles = '<link rel="stylesheet" href="../assets/css/quiz.css">';
-    $jsFiles = '';
+    $jsFiles = '<script src="../assets/js/quiz.js"></script>';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');
@@ -11,12 +11,10 @@
     <section class="cover">
         <h1>Repetition Quiz</h1>
         <img src="../assets/images/rep_quiz_cover.jpg" alt="">
-        <button>Start</button>
+        <button class="start" onclick="startQuiz()">Start</button>
     </section>
 
     <?php
-        // name for question form
-        $questionName = 'repetition-q1';
         $question = 'Q1: Using repetition correctly can establish ______ and unity in design.';
         // text, radio, or checkbox
         $questionType = 'radio';
@@ -50,8 +48,6 @@
         ];
         require('../assets/inc/quizQuestion.inc.php');
 
-        // name for question form
-        $questionName = 'repetition-q2';
         $question = 'Q2: What can happen if repetition is overused?';
         // text, radio, or checkbox
         $questionType = 'radio';
@@ -85,8 +81,6 @@
         ];
         require('../assets/inc/quizQuestion.inc.php');
 
-        // name for question form
-        $questionName = 'repetition-q3';
         $question = 'Q3: In which areas can repetition be effectively used?';
         // text, radio, or checkbox
         $questionType = 'checkbox';
@@ -120,5 +114,11 @@
         ];
         require('../assets/inc/quizQuestion.inc.php');
     ?>
+    
+    <div class="list hidden">
+        <span class="arrow" onclick="goLeft()">&lt;</span>
+        <span class="nums"></span>
+        <span class="arrow" onclick="goRight()">&gt;</span>
+    </div>
 </main>
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>
