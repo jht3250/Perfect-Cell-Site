@@ -28,6 +28,8 @@ const shift = (list, cur, dir = 'right') => {
 };
 
 const startQuiz = () => {
+    document.querySelector('h1').classList.remove('hidden');
+
     document.getElementsByClassName('cover')[0].classList.add('hidden');
     questions = document.getElementsByClassName('question');
     questionCount = questions.length;
@@ -102,15 +104,20 @@ const checkAnswer = (type) => {
 
         compareAnswers();
     } else if (type === 'text') {
-        let input = question.querySelector('input');
-        
-        if (input.value.trim().toLowerCase() === input.dataset.answer) {
-            input.classList.remove('incorrect');
-            input.classList.add('correct');
-            questionNums.children[current].classList.add('done');
-        } else {
-            input.classList.remove('correct');
-            input.classList.add('incorrect');
+        let inputs = question.querySelectorAll('input');
+
+        let allCorrect = true;
+        for (let input of inputs) {
+            if (input.value.trim().toLowerCase() === input.dataset.answer) {
+                input.classList.remove('incorrect');
+                input.classList.add('correct');
+            } else {
+                allCorrect = false;
+                input.classList.remove('correct');
+                input.classList.add('incorrect');
+            }
         }
+
+        if (allCorrect) questionNums.children[current].classList.add('done');
     }
 };

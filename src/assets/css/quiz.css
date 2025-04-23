@@ -13,6 +13,11 @@ main {
     border-radius: 15px;
 }
 
+h1 {
+    color: #222;
+    text-align: center;
+}
+
 button.start {
     position: absolute;
     top: 70%;
@@ -38,11 +43,6 @@ footer {
     display: block;
     position: relative;
     margin: 0 auto;
-}
-
-.cover h1 {
-    text-indent: -9999em;
-    font-size: 0;
 }
 
 .cover img {

@@ -1,4 +1,4 @@
 <div>
-    <label for="answer">Answer:</label>
-    <input type="text" id="answer" name="answer" data-answer="<?php echo $textAnswer; ?>">
+    <label for="answer<?php echo $i; ?>"><?php echo $textLabels[$i]; ?></label>
+    <input type="text" id="answer<?php echo $i; ?>" name="answer<?php echo $i; ?>" data-answer="<?php echo $textAnswers[$i]; ?>">
 </div>

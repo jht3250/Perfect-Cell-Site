@@ -7,7 +7,9 @@
     </h2>
     <?php
         if ($questionType === 'text') {
-            require($path . 'src/assets/inc/text.inc.php');
+            for ($i = 0, $l = count($textLabels); $i < $l; $i++) {
+                require($path . 'src/assets/inc/text.inc.php');
+            }
         } else {
             for ($i = 0, $l = count($options); $i < $l; $i++) {
                 require($path . 'src/assets/inc/option.inc.php');
