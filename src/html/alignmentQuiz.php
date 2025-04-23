@@ -72,9 +72,7 @@
         $question = 'Q3: You are aligning a large paragraph of text for your website. It should be _______ aligned.';
         // text, radio, or checkbox
         $questionType = 'text';
-        // name for radio is group (common)
-        // name for checkbox is individual (unique)
-        $options = [];      // not needed for text inputs, leave it empty
+        $textAnswer = 'left';
         require('../assets/inc/quizQuestion.inc.php');
     ?>
 

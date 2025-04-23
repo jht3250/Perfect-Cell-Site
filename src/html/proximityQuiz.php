@@ -18,9 +18,7 @@
         $question = 'Q1: Items that are grouped together are considered in the same part of the visual ___________';
         // text, radio, or checkbox
         $questionType = 'text';
-        // name for radio is group (common)
-        // name for checkbox is individual (unique)
-        $options = [];      // not needed for text inputs, leave it empty
+        $textAnswer = 'hierarchy';
         require('../assets/inc/quizQuestion.inc.php');
 
         $question = 'Q2: Why is it so important to space out items?';

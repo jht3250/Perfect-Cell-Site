@@ -1,4 +1,5 @@
-let questions, indexList, questionNums, questionCount;
+let questions, indexList, questionNums, questionCount, prev;
+let corrects, selected = [];
 let current = 0;
 
 const shift = (list, cur, dir = 'right') => {
@@ -47,42 +48,69 @@ const startQuiz = () => {
 };
 
 const goLeft = () => {
+    prev = current;
     current = (current === 0) ? questionCount - 1 : current - 1;
     shift(questions, current, 'left');
 }
 
 const goRight = () => {
+    prev = current;
     current = (current === questionCount - 1) ? 0 : current + 1;
     shift(questions, current);
 }
+
+const obtainCorrectAnswers = (options) => {
+    corrects = [];
+    for (let option of options) {
+        if (option.value === 'correct') {
+            corrects.push(option);
+        } 
+    }
+};
+
+const compareAnswers = () => {
+    let allCorrect = true;
+    for (let option of selected) {
+        if (corrects.includes(option)) {
+            document.querySelector(`label[for="${option.id}"]`).classList.add('correct');
+        } else {
+            document.querySelector(`label[for="${option.id}"]`).classList.add('incorrect');
+            allCorrect = false;
+            console.log('wrong');
+        }
+    }
+    if (allCorrect) {
+        questionNums.children[current].classList.add('done');
+        console.log('correct');
+    }
+};
 
 const checkAnswer = (type) => {
     let question = questions[current];
     
     if (type === 'radio' || type === 'checkbox') {
         let options = question.querySelectorAll('input');
-        
+
+        if (prev != current) obtainCorrectAnswers(options);
+
+        selected = [];
         for (let option of options) {
             if (option.checked) {
-                if (option.value === 'correct') {
-                    document.querySelector(`label[for="${option.id}"]`).classList.add('correct');
-                    if (type === 'radio') questionNums.children[current].classList.add('done');
-                } else {
-                    document.querySelector(`label[for="${option.id}"]`).classList.add('incorrect');
-                }
-            }
+                selected.push(option);
+            } 
         }
 
-        if (type === 'checkbox') {
-            let checkboxDone = true;
-            for (let option of options) {
-                if (option.value === 'correct' && !document.querySelector(`label[for="${option.id}"]`).classList.contains('correct')) {
-                    checkboxDone = false;
-                }
-            }
-            if (checkboxDone) questionNums.children[current].classList.add('done');
-        }
+        compareAnswers();
     } else if (type === 'text') {
-
+        let input = question.querySelector('input');
+        
+        if (input.value.trim().toLowerCase() === input.dataset.answer) {
+            input.classList.remove('incorrect');
+            input.classList.add('correct');
+            questionNums.children[current].classList.add('done');
+        } else {
+            input.classList.remove('correct');
+            input.classList.add('incorrect');
+        }
     }
 };

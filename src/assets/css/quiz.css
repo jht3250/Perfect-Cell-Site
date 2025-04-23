@@ -92,12 +92,24 @@ footer {
     color: #222;
 }
 
+/* Radio and checkbox */
 .done, .correct {
     color: #8fb355;
 }
 
 .incorrect {
     color: #c66262;
+}
+
+/* text */
+input[type="text"].correct {
+    color: #222;
+    background-color: #8fb355;
+}
+
+input[type="text"].incorrect {
+    color: white;
+    background-color: #c66262;
 }
 
 .curIndex {
