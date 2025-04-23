@@ -8,8 +8,10 @@
     require_once($path . 'src/assets/inc/header.inc.php');
 ?>
 <main>
-    <section class="card">
+    <section class="cover">
+        <h1>Final Quiz</h1>
         <img src="../assets/images/crap_final_cover.jpg" alt="">
+        <button>Start</button>
     </section>
 
     <div class="question">

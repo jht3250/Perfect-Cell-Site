@@ -8,14 +8,16 @@
     require_once($path . 'src/assets/inc/header.inc.php');
 ?>      
 <main>
-    <section class="card">
+    <section class="cover">
+        <h1>Proximity Quiz</h1>
         <img src="../assets/images/prox_quiz_cover.jpg" alt="">
+        <button>Start</button>
     </section>
 
     <?php
         // name for question form
         $questionName = 'proximity-q1';
-        $question = 'Items that are grouped together are considered in the same part of the visual ___________';
+        $question = 'Q1: Items that are grouped together are considered in the same part of the visual ___________';
         // text, radio, or checkbox
         $questionType = 'text';
         // name for radio is group (common)
@@ -25,7 +27,7 @@
 
         // name for question form
         $questionName = 'proximity-q2';
-        $question = 'Why is it so important to space out items?';
+        $question = 'Q2: Why is it so important to space out items?';
         // text, radio, or checkbox
         $questionType = 'radio';
         // name for radio is group (common)
@@ -60,7 +62,7 @@
 
         // name for question form
         $questionName = 'proximity-q3';
-        $question = 'If images are too close together you should:';
+        $question = 'Q3: If images are too close together you should:';
         // text, radio, or checkbox
         $questionType = 'radio';
         // name for radio is group (common)

@@ -8,14 +8,16 @@
     require_once($path . 'src/assets/inc/header.inc.php');
 ?>
 <main>
-    <section class="card">
+    <section class="cover">
+        <h1>Repetition Quiz</h1>
         <img src="../assets/images/rep_quiz_cover.jpg" alt="">
+        <button>Start</button>
     </section>
 
     <?php
         // name for question form
         $questionName = 'repetition-q1';
-        $question = 'Using repetition correctly can establish ______ and unity in design.';
+        $question = 'Q1: Using repetition correctly can establish ______ and unity in design.';
         // text, radio, or checkbox
         $questionType = 'radio';
         // name for radio is group (common)
@@ -50,7 +52,7 @@
 
         // name for question form
         $questionName = 'repetition-q2';
-        $question = 'What can happen if repetition is overused?';
+        $question = 'Q2: What can happen if repetition is overused?';
         // text, radio, or checkbox
         $questionType = 'radio';
         // name for radio is group (common)
@@ -85,7 +87,7 @@
 
         // name for question form
         $questionName = 'repetition-q3';
-        $question = 'In which areas can repetition be effectively used?';
+        $question = 'Q3: In which areas can repetition be effectively used?';
         // text, radio, or checkbox
         $questionType = 'checkbox';
         // name for radio is group (common)

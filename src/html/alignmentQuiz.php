@@ -8,14 +8,16 @@
     require_once($path . 'src/assets/inc/header.inc.php');
 ?>
 <main>
-    <section class="card">
+    <section class="cover">
+        <h1>Alignment Quiz</h1>
         <img src="../assets/images/align_quiz_cover.jpg" alt="">
+        <button>Start</button>
     </section>
 
     <?php 
         // name for question form
         $questionName = 'alignment-q1';
-        $question = 'True or False, the site should be aligned in a way that guides the users eyes down the page naturally.';
+        $question = 'Q1: True or False, the site should be aligned in a way that guides the users eyes down the page naturally.';
         // text, radio, or checkbox
         $questionType = 'radio';
         // name for radio is group (common)
@@ -38,7 +40,7 @@
 
         // name for question form
         $questionName = 'alignment-q2';
-        $question = 'When is the best time to use center alignment for text?';
+        $question = 'Q2: When is the best time to use center alignment for text?';
         // text, radio, or checkbox
         $questionType = 'radio';
         // name for radio is group (common)
@@ -73,7 +75,7 @@
 
         // name for question form
         $questionName = 'alignment-q3';
-        $question = 'You are aligning a large paragraph of text for your website. It should be _______ aligned.';
+        $question = 'Q3: You are aligning a large paragraph of text for your website. It should be _______ aligned.';
         // text, radio, or checkbox
         $questionType = 'text';
         // name for radio is group (common)

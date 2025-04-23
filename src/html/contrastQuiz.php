@@ -2,20 +2,22 @@
     $path = '../../';
     $title = 'Oh CRAP: Contrast - Quiz';
     $cssFiles = '<link rel="stylesheet" href="../assets/css/quiz.css">';
-    $jsFiles = '';
+    $jsFiles = '<script src="../assets/js/quiz.js"></script>';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');
 ?>
 <main>
-    <section class="card">
+    <section class="cover">
+        <h1>Contrast Quiz</h1>
         <img src="../assets/images/contrast_quiz_cover.jpg" alt="">
+        <button onclick="startQuiz()">Start</button>
     </section>
 
     <?php 
         // name for question form
         $questionName = 'contrast-q1';
-        $question = 'What could happen if contrast is not properly implemented?';
+        $question = 'Q1: What could happen if contrast is not properly implemented?';
         // text, radio, or checkbox
         $questionType = 'radio';
         // name for radio is group (common)
@@ -50,7 +52,7 @@
 
         // name for question form
         $questionName = 'contrast-q2';
-        $question = 'Contrast is about making certain elements ______ from other elements to highlight important information.';
+        $question = 'Q2: Contrast is about making certain elements ______ from other elements to highlight important information.';
         // text, radio, or checkbox
         $questionType = 'radio';
         // name for radio is group (common)
@@ -85,7 +87,7 @@
 
         // name for question form
         $questionName = 'contrast-q3';
-        $question = 'Which of the following are ways to create contrast?';
+        $question = 'Q3: Which of the following are ways to create contrast?';
         // text, radio, or checkbox
         $questionType = 'checkbox';
         // name for radio is group (common)
@@ -118,5 +120,11 @@
         ];
         require('../assets/inc/quizQuestion.inc.php');
     ?>
+
+    <div class="list hidden">
+        <span onclick="goLeft()">&lt;</span>
+        <span class="nums"></span>
+        <span onclick="goRight()">&gt;</span>
+    </div>
 </main>
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>

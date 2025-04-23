@@ -1,10 +1,10 @@
-<div class="question">
-    <p>
+<div class="question hidden">
+    <h2>
         <?php 
             echo $question; 
             if ($questionType === 'checkbox') echo ' (select all that applies)';
         ?>
-    </p>
+    </h2>
     <form name="<?php echo $questionName; ?>" action="#" method="POST">
         <?php
             if ($questionType === 'text') {
@@ -15,6 +15,6 @@
                 }
             }
         ?>
-        <input type="submit" class="button">
+        <input type="submit" class="button" value="Check">
     </form>
 </div>
