@@ -12,67 +12,86 @@
         <img src="../assets/images/prox_quiz_cover.jpg" alt="">
     </section>
 
-    <div class="question">
-        <p>Items that are grouped together are considered in the same part of the visual ___________</p>
-        <form>
-            <div>
-                <label for="answer">Answer:</label>
-                <input type="text" id="answer" name="answer">
-            </div>
+    <?php
+        // name for question form
+        $questionName = 'proximity-q1';
+        $question = 'Items that are grouped together are considered in the same part of the visual ___________';
+        // text, radio, or checkbox
+        $questionType = 'text';
+        // name for radio is group (common)
+        // name for checkbox is individual (unique)
+        $options = [];      // not needed for text inputs, leave it empty
+        require('../assets/inc/quizQuestion.inc.php');
 
-            <button id="Submit">Submit</button>
-        </form>
-    </div>
+        // name for question form
+        $questionName = 'proximity-q2';
+        $question = 'Why is it so important to space out items?';
+        // text, radio, or checkbox
+        $questionType = 'radio';
+        // name for radio is group (common)
+        // name for checkbox is individual (unique)
+        $options = [
+            [
+                'id' => 'aesthetic', 
+                'name' => 'reason', 
+                'value' => 'incorrect', 
+                'label' => 'It looks better'
+            ],
+            [
+                'id' => 'space', 
+                'name' => 'reason', 
+                'value' => 'incorrect', 
+                'label' => 'To give the user more space to scroll'
+            ],
+            [
+                'id' => 'interference', 
+                'name' => 'reason', 
+                'value' => 'correct', 
+                'label' => 'So items of different groups do not interfere with others'
+            ],
+            [
+                'id' => 'piling', 
+                'name' => 'reason', 
+                'value' => 'incorrect', 
+                'label' => "Don't worry, let them pile up"
+            ]
+        ];
+        require('../assets/inc/quizQuestion.inc.php');
 
-    <div class="question">
-        <p>Why is it so important to space out items?</p>
-        <form>
-            <div>
-                <input type="radio" id="better" name="contrast" value="incorrect">
-                <label for="better">It looks better</label>
-            </div>
-            <div>
-                <input type="radio" id="space" name="contrast" value="incorrect">
-                <label for="space">To give the user more space to scroll</label>
-            </div>
-            <div>
-                <input type="radio" id="items" name="contrast" value="correct">
-                <label for="items">So items of different groups do not interfere with others</label>
-            </div>
-            <div>
-                <input type="radio" id="pile" name="contrast" value="incorrect">
-                <label for="pile">Don't worry, let them pile up</label>
-            </div>
-            
-            <button id="Submit">Submit</button>
-        </form>
-    </div>
-
-    <div class="question">
-        <p>If images are too close together you should:</p>
-        <form>
-            <div>
-                <input type="radio" id="breaks" name="contrast" value="incorrect">
-                <label for="breaks">Use breaks to separate them</label>
-            </div>
-            <br>
-            <div>
-                <input type="radio" id="margins" name="contrast" value="correct">
-                <label for="margins">Add margins or padding to each image</label>
-            </div>
-            <br>
-            <div>
-                <input type="radio" id="hope" name="contrast" value="incorrect">
-                <label for="hope">Hope it fixes itself on the user screen</label>
-            </div>
-            <br>
-            <div>
-                <input type="radio" id="positioning" name="contrast" value="incorrect">
-                <label for="positioning">Let it sit like that</label>
-            </div>
-            
-            <button id="Submit">Submit</button>
-        </form>
-    </div>
+        // name for question form
+        $questionName = 'proximity-q3';
+        $question = 'If images are too close together you should:';
+        // text, radio, or checkbox
+        $questionType = 'radio';
+        // name for radio is group (common)
+        // name for checkbox is individual (unique)
+        $options = [
+            [
+                'id' => 'separate', 
+                'name' => 'cluster', 
+                'value' => 'incorrect', 
+                'label' => 'Use breaks to separate them'
+            ],
+            [
+                'id' => 'margin', 
+                'name' => 'cluster', 
+                'value' => 'correct', 
+                'label' => 'Add margins or padding to each image'
+            ],
+            [
+                'id' => 'hope', 
+                'name' => 'cluster', 
+                'value' => 'incorrect', 
+                'label' => 'Hope it fixes itself on the user screen'
+            ],
+            [
+                'id' => 'do-nothing', 
+                'name' => 'cluster', 
+                'value' => 'incorrect', 
+                'label' => 'Let it sit like that'
+            ]
+        ];
+        require('../assets/inc/quizQuestion.inc.php');
+    ?>
 </main>
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>

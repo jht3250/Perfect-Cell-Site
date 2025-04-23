@@ -14,7 +14,7 @@
 
     <?php 
         // name for question form
-        $questionName = 'contrastQ1';
+        $questionName = 'contrast-q1';
         $question = 'What could happen if contrast is not properly implemented?';
         // text, radio, or checkbox
         $questionType = 'radio';
@@ -49,7 +49,7 @@
         require('../assets/inc/quizQuestion.inc.php');
 
         // name for question form
-        $questionName = 'contrastQ2';
+        $questionName = 'contrast-q2';
         $question = 'Contrast is about making certain elements ______ from other elements to highlight important information.';
         // text, radio, or checkbox
         $questionType = 'radio';
@@ -84,7 +84,7 @@
         require('../assets/inc/quizQuestion.inc.php');
 
         // name for question form
-        $questionName = 'contrastQ3';
+        $questionName = 'contrast-q3';
         $question = 'Which of the following are ways to create contrast?';
         // text, radio, or checkbox
         $questionType = 'checkbox';
