@@ -1,6 +1,6 @@
 <header>
     <nav>
-        <a href="<?php echo $path; ?>index.php"><img src="<?php echo $path; ?>src/assets/images/star_black.png" alt="logo" class="logo"></a>
+        <a href="<?php echo $path; ?>index.php"><img src="<?php echo $path; ?>src/assets/images/site_logo.png" alt="logo" class="logo"></a>
         
         <ul>
             <li class="dropdown" id="expandC">
