@@ -6,7 +6,7 @@
 
     $h1 = 'Alignment Quiz';
     $coverImg = 'align_quiz_cover.jpg';
-    $coverAlt = '';
+    $coverAlt = 'cover for alignement quiz';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');

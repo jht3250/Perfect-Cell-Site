@@ -6,7 +6,7 @@
 
     $h1 = 'Contrast Quiz';
     $coverImg = 'contrast_quiz_cover.jpg';
-    $coverAlt = '';
+    $coverAlt = 'cover for contrast quiz';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');

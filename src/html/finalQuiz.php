@@ -6,7 +6,7 @@
 
     $h1 = 'Final Quiz';
     $coverImg = 'crap_final_cover.jpg';
-    $coverAlt = '';
+    $coverAlt = 'cover for final quiz';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');

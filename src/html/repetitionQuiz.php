@@ -6,7 +6,7 @@
 
     $h1 = 'Repetition Quiz';
     $coverImg = 'rep_quiz_cover.jpg';
-    $coverAlt = '';
+    $coverAlt = 'cover for repetition quiz';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');

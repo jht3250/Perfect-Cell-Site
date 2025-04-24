@@ -6,7 +6,7 @@
 
     $h1 = 'Proximity Quiz';
     $coverImg = 'prox_quiz_cover.jpg';
-    $coverAlt = '';
+    $coverAlt = 'cover for proximity quiz';
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');
