@@ -42,13 +42,19 @@ h5 {
 }
 
 h6 {
-    font-size: 1rem;  /*16px*/
+    font-size: 1.2rem;  /*19.2px*/
     line-height: 1.5em;
 }
 
 p {
-    font-size: 1rem;  /*16px*/
+    font-size: 1.125rem;  /*18px*/
     line-height: 1.25em;
+    padding-bottom: 3%;
+}
+
+li, a {
+    font-size: 1.125rem;  /*18px*/
+    line-height: 1.25em;   
 }
 
 /* Button styles */
@@ -60,7 +66,7 @@ button, .button, .button:link, .button:visited {
 
     /* Font style */
     font-family: 'Cantata One', sans-serif;
-    font-size: 1em;
+    font-size: 1.125em;
     color: black;
 
     /* Button styles */
@@ -218,6 +224,10 @@ footer h4 {
 
 .footer-sec a:hover {
     color: white;
+}
+
+.footer-sec a:active {
+    text-decoration: underline;
 }
 
 .footer-row-2 {

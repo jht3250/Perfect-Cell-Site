@@ -1,5 +1,5 @@
-<main>
-    <h1>Try it yourself!</h1>
+<main class="practice">
+    <h4>Try it yourself!</h4>
 
     <section class="container">
         <!-- <div class="editor"> -->

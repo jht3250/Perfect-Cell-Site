@@ -8,6 +8,9 @@
 
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');
+?>
+<h1>Alignment</h1>
+<?php
     require_once($path . 'src/assets/inc/codeTest.inc.php'); 
     require_once($path . 'src/assets/inc/footer.inc.php'); 
 ?>

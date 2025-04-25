@@ -48,6 +48,10 @@ h2, h3 {
     display: none;
 }
 
+.interactive {
+    margin: 7% auto 0 auto;
+}
+
 .one, .two {
     display: none;
     width: 80%;
@@ -78,6 +82,7 @@ h2, h3 {
 
 .display, img.display {
     display: block;
+    margin-top: 2%;
 }
 
 #text-example {
@@ -131,7 +136,7 @@ h2, h3 {
 /* Practice button */
 .practice {
     display: block;
-    margin: 0 0 0 auto;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 920px) {
@@ -150,6 +155,9 @@ h2, h3 {
         display: block;
         margin: 0 auto;
     }
+    main {
+        margin: 10vh 10vw;
+    }
 }
 
 @media screen and (max-width: 620px) {
@@ -161,5 +169,8 @@ h2, h3 {
 @media screen and (max-width: 480px) {
     .big-pink{
         font-size: 0.7em;
+    }
+    main {
+        margin: 5vh 10vw;
     }
 }
