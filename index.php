@@ -30,7 +30,7 @@
         </section>
 
         <section class="person">
-            <img src="src/assets/images/star_black.png" alt="">
+            <img src="src/assets/images/elliePic.jpg" alt="appa">
             <section class="person-info">
                 <h3>Eliana Durell</h3>
                 <p>Age: 21</p>

@@ -111,6 +111,6 @@
         </section>
     </section>
 
-    <a class="button practice" href="contrastPractice.php">Practice</a>
+    <a class="button practice" href="contrastPractice.php">Go To Practice</a>
 </main>
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>

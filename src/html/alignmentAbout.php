@@ -69,7 +69,7 @@
     </section>
 
     <div class="example">
-        <img src="../assets/images/align_img_1.jpg" alt="">
+        <img src="../assets/images/align_img_1.png" alt="">
     </div>
 
     <section class="use-in">
@@ -96,6 +96,6 @@
         </div>
     </section>
 
-    <a class="button practice" href="alignmentPractice.php">Practice</a>
+    <a class="button practice" href="alignmentPractice.php">Go To Practice</a>
 </main>   
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>

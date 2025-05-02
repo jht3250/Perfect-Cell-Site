@@ -80,6 +80,6 @@
         </div>
     </section>
 
-    <a class="button practice" href="repetitionPractice.php">Practice</a>
+    <a class="button practice" href="repetitionPractice.php">Go To Practice</a>
 </main>
 <?php require_once($path . 'src/assets/inc/footer.inc.php'); ?>
