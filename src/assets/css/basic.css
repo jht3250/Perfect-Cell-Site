@@ -52,7 +52,7 @@ p {
     padding-bottom: 3%;
 }
 
-li, a {
+li, a, label {
     font-size: 1.125rem;  /*18px*/
     line-height: 1.25em;   
 }

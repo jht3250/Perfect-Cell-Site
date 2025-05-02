@@ -40,6 +40,13 @@ h2, h3 {
     text-align: center;
     margin: 20px auto;
 }
+.ex-grid {
+    display: flex;
+}
+
+.ex-grid img {
+    width: 25vw;
+}
 
 /* Interative examples */
 .interactives img {
@@ -161,6 +168,9 @@ h2, h3 {
     img.display {
         width: 70vw;
     }
+    .ex-grid img {
+        width: 25vw;
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -187,6 +197,14 @@ h2, h3 {
     .big-pink{
        font-size: 1.2em;
     }
+    .ex-grid {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .ex-grid img {
+        width: 50vw;
+        margin: 1% auto;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -196,4 +214,9 @@ h2, h3 {
     main {
         margin: 5vh 10vw;
     }
+    .ex-grid img {
+        width: 70vw;
+        margin: 1% auto;
+    }
 }
+

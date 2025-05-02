@@ -11,9 +11,12 @@
     <h1>What is <span class="big-pink">Repetition<span class="big-white">?</span></span></h1>
     <p>Repetition is all about keeping the website consistent and controlled. It is important to not confuse the user and make the website very easy to navigate and scroll without any curl balls coming at them. Images should always be in similar positions and set ups, with consistent spacing, and any shapes and decorations you have on your site should follow a pattern that flows together seamlessly.</p>
     
-    <div class="example">
-        <img src="../assets/images/rep_img_1.jpg" alt="">
-    </div>
+    <div class="example ex-grid">
+       <!-- <img src="../assets/images/rep_img_1.jpg" alt=""> -->
+       <img src="../assets/images/rep_img1_1.png" alt="">
+       <img src="../assets/images/rep_img2_1.png" alt="">
+       <img src="../assets/images/rep_img3_1.png" alt="">
+   </div>
 
     <section class="effects">
         <h2>Effects</h2>
@@ -37,9 +40,12 @@
             <h4>Excessive Similarity Without Variation</h4>
             <p>Repeating the same elements without variation in size, positioning, or color can make a design feel stagnant and predictable.</p>
             
-            <div class="example">
-                <img src="../assets/images/rep_img_2.jpg" alt="">
-            </div>
+            <div class="example ex-grid">
+               <!-- <img src="../assets/images/rep_img_2.jpg" alt=""> -->
+               <img src="../assets/images/rep_img1_2.png" alt="">
+               <img src="../assets/images/rep_img2_2.png" alt="">
+               <img src="../assets/images/rep_img3_2.png" alt="">
+           </div>
         </section>
     </section>
 
