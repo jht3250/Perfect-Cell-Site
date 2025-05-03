@@ -18,65 +18,70 @@ const updateDropdown = (ele, updateText) => {
 
 // Contrast Dropdown
 const contrast = document.querySelector('#expandC');
-contrast.addEventListener('mouseover', () => {if (getScreenWidth() > 768)
-    {updateDropdown(contrast, 'Contrast');
+contrast.addEventListener('mouseover', () => {
+    if (getScreenWidth() > 768) {
+        updateDropdown(contrast, 'Contrast');
     }    
 });
 contrast.addEventListener('mouseout', () => {
     if (getScreenWidth() > 768){
-    updateDropdown(contrast, 'C');
-    removeAllDropdowns();
+        updateDropdown(contrast, 'C');
+        removeAllDropdowns();
     }
 });
 
 // Repetition Dropdown
 const repetition = document.querySelector('#expandR');
-repetition.addEventListener('mouseover', () =>  {if (getScreenWidth() > 768)
-    {updateDropdown(repetition, 'Repetition');
+repetition.addEventListener('mouseover', () =>  {
+    if (getScreenWidth() > 768) {
+        updateDropdown(repetition, 'Repetition');
     }
 });
 repetition.addEventListener('mouseout', () => {
     if (getScreenWidth() > 768){
-    updateDropdown(repetition, 'R');
-    removeAllDropdowns();
+        updateDropdown(repetition, 'R');
+        removeAllDropdowns();
     }
 });
 
 // Alignment Dropdown
 const alignment = document.querySelector('#expandA');
-alignment.addEventListener('mouseover', () => {if (getScreenWidth() > 768)
-    {updateDropdown(alignment, 'Alignment');
+alignment.addEventListener('mouseover', () => {
+    if (getScreenWidth() > 768) {
+        updateDropdown(alignment, 'Alignment');
     }
 });
 alignment.addEventListener('mouseout', () => {
     if (getScreenWidth() > 768){
-    updateDropdown(alignment, 'A');
-    removeAllDropdowns();
+        updateDropdown(alignment, 'A');
+        removeAllDropdowns();
     }
 });
 // Proximity Dropdown
 const proximity = document.querySelector('#expandP');
-proximity.addEventListener('mouseover', () => {if (getScreenWidth() > 768)
-    {updateDropdown(proximity, 'Proximity');
+proximity.addEventListener('mouseover', () => {
+    if (getScreenWidth() > 768) {
+        updateDropdown(proximity, 'Proximity');
     }
 });
 proximity.addEventListener('mouseout', () => {
     if (getScreenWidth() > 768){
-    updateDropdown(proximity, 'P');
-    removeAllDropdowns();
+        updateDropdown(proximity, 'P');
+        removeAllDropdowns();
     }
 });
 
 // Other Dropdown
 const other = document.querySelector('#others');
-other.addEventListener('mouseover', () => {if (getScreenWidth() > 768)
-    {updateDropdown(other, '.');
+other.addEventListener('mouseover', () => {
+    if (getScreenWidth() > 768) {
+        updateDropdown(other, '.');
     }
 });
 other.addEventListener('mouseout', () => {
     if (getScreenWidth() > 768){
-    updateDropdown(other, '.');
-    removeAllDropdowns();
+        updateDropdown(other, '.');
+        removeAllDropdowns();
     }
 });
 
