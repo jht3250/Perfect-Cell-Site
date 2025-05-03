@@ -50,7 +50,7 @@
         </section>
 
         <section class="person">
-            <img src="src/assets/images/star_black.png" alt="">
+            <img src="src/assets/images/kevin.GIF" alt="">
             <section class="person-info">
                 <h3>Kevin Zheng</h3>
                 <p>Age: 19</p>
@@ -60,7 +60,7 @@
         </section>
 
         <section class="person">
-            <img src="src/assets/images/kylePic.jpg" alt="">
+            <img src="src/assets/images/kylePic.gif" alt="">
             <section class="person-info">
                 <h3>Kyle Soltis</h3>
                 <p>Age: 21</p>
@@ -70,7 +70,7 @@
         </section>
 
         <section class="person">
-            <img src="src/assets/images/star_black.png" alt="">
+            <img src="src/assets/images/TylerProfile.jpg" alt="">
             <section class="person-info">
                 <h3>Tyler Gardner</h3>
                 <p>Age: 20</p>
