@@ -20,39 +20,49 @@ const updateDropdown = (ele, updateText) => {
 const contrast = document.querySelector('#expandC');
 contrast.addEventListener('mouseover', () => updateDropdown(contrast, 'Contrast'));
 contrast.addEventListener('mouseout', () => {
+    if (getScreenWidth() > 768){
     updateDropdown(contrast, 'C');
     removeAllDropdowns();
+    }
 });
 
 // Repetition Dropdown
 const repetition = document.querySelector('#expandR');
 repetition.addEventListener('mouseover', () => updateDropdown(repetition, 'Repetition'));
 repetition.addEventListener('mouseout', () => {
+    if (getScreenWidth() > 768){
     updateDropdown(repetition, 'R');
     removeAllDropdowns();
+    }
 });
 
 // Alignment Dropdown
 const alignment = document.querySelector('#expandA');
 alignment.addEventListener('mouseover', () => updateDropdown(alignment, 'Alignment'));
 alignment.addEventListener('mouseout', () => {
+    if (getScreenWidth() > 768){
     updateDropdown(alignment, 'A');
     removeAllDropdowns();
+    }
 });
 // Proximity Dropdown
 const proximity = document.querySelector('#expandP');
 proximity.addEventListener('mouseover', () => updateDropdown(proximity, 'Proximity'));
 proximity.addEventListener('mouseout', () => {
+    if (getScreenWidth() > 768){
     updateDropdown(proximity, 'P');
     removeAllDropdowns();
+    }
 });
 
 // Other Dropdown
 const other = document.querySelector('#others');
 other.addEventListener('mouseover', () => updateDropdown(other, '.'));
 other.addEventListener('mouseout', () => {
+    if (getScreenWidth() > 768){
     updateDropdown(other, '.');
     removeAllDropdowns();
+    }
 });
 
 function getScreenWidth() {
