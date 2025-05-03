@@ -40,7 +40,7 @@
         </section>
 
         <section class="person">
-            <img src="src/assets/images/star_black.png" alt="">
+            <img src="src/assets/images/johnPic.jpg" alt="">
             <section class="person-info">
                 <h3>John Treon</h3>
                 <p>Age: 22</p>
