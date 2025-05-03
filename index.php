@@ -50,7 +50,7 @@
         </section>
 
         <section class="person">
-            <img src="src/assets/images/star_black.png" alt="">
+            <img src="src/assets/images/kevin.GIF" alt="">
             <section class="person-info">
                 <h3>Kevin Zheng</h3>
                 <p>Age: 19</p>
