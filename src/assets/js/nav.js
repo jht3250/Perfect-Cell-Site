@@ -54,3 +54,7 @@ other.addEventListener('mouseout', () => {
     updateDropdown(other, '.');
     removeAllDropdowns();
 });
+
+function getScreenWidth() {
+    return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+}
