@@ -70,7 +70,7 @@
         </section>
 
         <section class="person">
-            <img src="src/assets/images/star_black.png" alt="">
+            <img src="src/assets/images/TylerProfile.jpg" alt="">
             <section class="person-info">
                 <h3>Tyler Gardner</h3>
                 <p>Age: 20</p>
