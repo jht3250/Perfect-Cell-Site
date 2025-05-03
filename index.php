@@ -20,7 +20,7 @@
     <section class="who-made">
         <h2>Who Made This?<img src="src/assets/images/three-stem-round-pink-2.png" alt="pink clover icon"></h2>
         <section class="person">
-            <img src="src/assets/images/star_black.png" alt="">
+            <img src="src/assets/images/Lucilius.png" alt="">
             <section class="person-info">
                 <h3>Jake Hamilton</h3>
                 <p>Age: 22</p>
