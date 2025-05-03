@@ -60,7 +60,7 @@
         </section>
 
         <section class="person">
-            <img src="src/assets/images/kylePic.jpg" alt="">
+            <img src="src/assets/images/kylePic.gif" alt="">
             <section class="person-info">
                 <h3>Kyle Soltis</h3>
                 <p>Age: 21</p>
