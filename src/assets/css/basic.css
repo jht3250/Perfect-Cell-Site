@@ -258,7 +258,13 @@ footer h4 {
 /* Media Queries                                  */
 /* ============================================== */
 @media screen and (max-width: 768px) {
+    .dropdown {
+        position: inherit;
+    }
     
+    .links {
+        width: 100vw;
+    }
 
     .footer-row-1 {
         display: grid;

@@ -16,8 +16,11 @@ const updateDropdown = (ele, updateText) => {
     const links = ele.querySelector('.links');
     links.classList.toggle('active');
 
-    ele.classList.toggle('expanded');
-    ele.children[0].innerText = updateText;
+    if (checkScreenWidth()) {
+        if (updateText.length > 1) ele.classList.add('expanded');
+        else ele.classList.remove('expanded');
+        ele.children[0].innerText = updateText;
+    }
 };
 
 // Contrast Dropdown
@@ -31,6 +34,11 @@ contrast.addEventListener('mouseout', () => {
     updateDropdown(contrast, 'C');
     removeAllDropdowns();
 });
+contrast.addEventListener('click', (e) => {
+    // stop everything else beside this method to modify
+    e.stopPropagation();
+    updateDropdown(contrast, 'C');
+});
 
 // Repetition Dropdown
 const repetition = document.querySelector('#expandR');
@@ -42,6 +50,11 @@ repetition.addEventListener('mouseout', () => {
     if (!checkScreenWidth()) return;
     updateDropdown(repetition, 'R');
     removeAllDropdowns();
+});
+repetition.addEventListener('click', (e) => {
+    // stop everything else beside this method to modify
+    e.stopPropagation();
+    updateDropdown(repetition, 'R');
 });
 
 // Alignment Dropdown
@@ -55,6 +68,11 @@ alignment.addEventListener('mouseout', () => {
     updateDropdown(alignment, 'A');
     removeAllDropdowns();
 });
+alignment.addEventListener('click', (e) => {
+    // stop everything else beside this method to modify
+    e.stopPropagation();
+    updateDropdown(alignment, 'A');
+});
 
 // Proximity Dropdown
 const proximity = document.querySelector('#expandP');
@@ -67,6 +85,11 @@ proximity.addEventListener('mouseout', () => {
     updateDropdown(proximity, 'P');
     removeAllDropdowns();
 });
+proximity.addEventListener('click', (e) => {
+    // stop everything else beside this method to modify
+    e.stopPropagation();
+    updateDropdown(proximity, 'P');
+});
 
 // Other Dropdown
 const other = document.querySelector('#others');
@@ -77,5 +100,16 @@ other.addEventListener('mouseover', () => {
 other.addEventListener('mouseout', () => {
     if (!checkScreenWidth()) return;
     updateDropdown(other, '.');
+    removeAllDropdowns();
+});
+other.addEventListener('click', (e) => {
+    // stop everything else beside this method to modify
+    e.stopPropagation();
+    updateDropdown(other, '.');
+});
+
+// mobile 
+document.addEventListener('click', () => {
+    if (checkScreenWidth()) return;
     removeAllDropdowns();
 });
