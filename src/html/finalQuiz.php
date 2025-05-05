@@ -21,7 +21,7 @@
     $textAnswers = ['contrast', 'repetition', 'alignment', 'proximity'];
     require('../assets/inc/quizQuestion.inc.php');
 
-    $question = 'Q2: A web designer changes the background color of the page, then changes the color of the text to make it more legible. What principle is he using?';
+    $question = 'Q2: What principle is applied when a designer changes the background and text colors to improve readability?';
     // text, radio, or checkbox
     $questionType = 'radio';
     // name for radio is group (common)
