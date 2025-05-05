@@ -35,9 +35,13 @@ h2, h3 {
     margin: 0 auto;
 }
 
+.interactives {
+    margin: clamp(30px, 6vh, 70px) 0;
+}
+
 .example p, .interactives p {
-    width: 80%;
-    text-align: center;
+    /* width: 80%;
+    text-align: center; */
     margin: 20px auto;
 }
 .ex-grid {
@@ -50,18 +54,18 @@ h2, h3 {
 
 /* Interative examples */
 .interactives img {
-    width: 70%;
+    width: 100%;
     margin: 20px auto;
     display: none;
 }
 
 .interactive {
-    margin: 4% auto 0 auto;
+    /* margin: 4% auto 0 auto; */
 }
 
 .one, .two {
     display: none;
-    width: 80%;
+    /* width: 80%; */
     height: 100px;
     padding-top: 50px;
     margin: auto;
@@ -145,6 +149,7 @@ h2, h3 {
     display: block;
     margin: 0 auto;
 }
+
 @media screen and (max-width: 1250px) {
     #text-example {
         display: grid;
@@ -163,10 +168,10 @@ h2, h3 {
        font-size: 1.9em;
     }
     .example img {
-        width: 80vw;
+        /* width: 80vw; */
     }
     img.display {
-        width: 70vw;
+        /* width: 70vw; */
     }
     .ex-grid img {
         width: 25vw;
@@ -189,7 +194,7 @@ h2, h3 {
         padding-top: 7vh;
     }
     img.display {
-        width: 80vw;
+        /* width: 80vw; */
     }
 }
 

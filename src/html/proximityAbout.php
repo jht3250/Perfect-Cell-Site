@@ -73,14 +73,14 @@
     </section>
 
     <section class="interactives">
-        <div>
+        <div class="example">
             <button class="interactive">Correct This!</button>
             <img src="../assets/images/prox_img_3.jpg" alt="" class="bad display">
             <img src="../assets/images/prox_img_4.jpg" alt="" class="good">
             <p>Be sure to use all possible space available for your content. Leave some white space, but not too much as to leave the page with blank spaces.</p>
         </div>
 
-        <div>
+        <div class="example">
             <button class="interactive">Correct This!</button>
             <img src="../assets/images/prox_img_5.jpg" alt="" class="bad display">
             <img src="../assets/images/prox_img_6.jpg" alt="" class="good">

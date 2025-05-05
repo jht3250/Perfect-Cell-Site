@@ -95,20 +95,20 @@
         </ul>
     </section>
 
-    <section>
-        <section class="example">
+    <section class="interactives">
+        <div class="example">
             <button class="interactive">Correct This!</button>
             <div class="bad one display">This is a Bad Example</div>
             <div class="good one">This is a Good Example</div>
             <p>A key aspect to web design is legibility of your content. Always make sure the text starkly contrasts the background so anyone can read it.</p>
-        </section>
+        </div>
 
-        <section class="example">
+        <div class="example">
             <button class="interactive">Correct This!</button>
             <div class="bad two display">Don't do this, red and green blend together</div>
             <div class="good two">Do something like this, colors with clear contrast</div>
             <p>Be sure that your color choices are not alienating users who have colorblindness. There are various tools to check.</p>
-        </section>
+        </div>
     </section>
 
     <a class="button practice" href="contrastPractice.php">Go To Practice</a>

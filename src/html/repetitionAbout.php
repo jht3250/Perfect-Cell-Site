@@ -72,13 +72,13 @@
     </section>
 
     <section class="interactives">
-        <div>
+        <div class="example">
             <button class="interactive">Correct This!</button>
             <img src="../assets/images/rep_img_3.jpg" alt="" class="bad display">
             <img src="../assets/images/rep_img_4.jpg" alt="" class="good">
         </div>
 
-        <div>
+        <div class="example">
             <button class="interactive">Correct This!</button>
             <img src="../assets/images/rep_img_5.jpg" alt="" class="bad display">
             <img src="../assets/images/rep_img_6.jpg" alt="" class="good">
