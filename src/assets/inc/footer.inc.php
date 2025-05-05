@@ -29,7 +29,7 @@
                 </section>
                 
                 <section class="footer-sec">
-                    <h4>Other</h4>
+                    <h4>Others</h4>
                     <a href="<?php echo $path; ?>src/html/finalQuiz.php">Final Quiz</a>
                     <a href="<?php echo $path; ?>src/html/settings.php">Settings</a>
                     <a href="<?php echo $path; ?>src/html/references.php">References</a>

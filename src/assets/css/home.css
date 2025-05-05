@@ -60,6 +60,9 @@ h2 img {
 }
 
 @media screen and (max-width: 760px) {
+    h1 {
+        height: clamp(200px, 50vh, 300px);
+    }
     .person {
         display: grid;
         grid-template-columns: auto;

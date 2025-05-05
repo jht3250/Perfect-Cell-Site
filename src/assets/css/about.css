@@ -168,7 +168,7 @@ h2, h3 {
        font-size: 1.9em;
     }
     .example img {
-        /* width: 80vw; */
+        width: 100%;
     }
     img.display {
         /* width: 70vw; */

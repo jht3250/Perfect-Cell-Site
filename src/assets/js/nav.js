@@ -1,5 +1,6 @@
-const checkScreenWidth = (size = 768) => {
-    return (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) > size;
+const checkScreenWidth = (greaterThan = true, size = 768) => {
+    if (greaterThan) return (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) > size;
+    else return (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) < size;
 };
 
 const removeAllDropdowns = () => {
@@ -18,7 +19,6 @@ const updateDropdown = (ele, updateText) => {
 
     if (checkScreenWidth()) {
         if (updateText.length > 1 || updateText === '.') ele.classList.add('expanded');
-        // else ele.classList.remove('expanded');
         ele.children[0].innerText = updateText;
     }
 };
@@ -37,7 +37,7 @@ contrast.addEventListener('mouseout', () => {
 contrast.addEventListener('click', (e) => {
     // stop everything else beside this method to modify
     e.stopPropagation();
-    updateDropdown(contrast, 'C');
+    updateDropdown(contrast, 'Contrast');
 });
 
 // Repetition Dropdown
@@ -95,7 +95,7 @@ proximity.addEventListener('click', (e) => {
 const other = document.querySelector('#others');
 other.addEventListener('mouseover', () => {
     if (!checkScreenWidth()) return;
-    updateDropdown(other, '.');
+    updateDropdown(other, 'Others.');
 });
 other.addEventListener('mouseout', () => {
     if (!checkScreenWidth()) return;
