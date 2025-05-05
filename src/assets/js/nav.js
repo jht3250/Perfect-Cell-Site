@@ -37,7 +37,7 @@ contrast.addEventListener('mouseout', () => {
 contrast.addEventListener('click', (e) => {
     // stop everything else beside this method to modify
     e.stopPropagation();
-    updateDropdown(contrast, 'Contrast');
+    updateDropdown(contrast, 'C');
 });
 
 // Repetition Dropdown

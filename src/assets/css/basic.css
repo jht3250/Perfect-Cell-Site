@@ -257,6 +257,16 @@ footer h4 {
 /* ============================================== */
 /* Media Queries                                  */
 /* ============================================== */
+@media screen and (min-width: 1600px) {
+    p, li, a, label, .links a {
+        font-size: 1.4rem;
+    }
+
+    .dropdown {
+        font-size: 2.5rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 2.25rem; /*36px*/
@@ -276,6 +286,7 @@ footer h4 {
 
     p, li, a, label {
         font-size: 0.875rem;
+        line-height: 1.5em;
     }
 
     nav {

@@ -174,7 +174,7 @@ h2, h3 {
         /* width: 70vw; */
     }
     .ex-grid img {
-        width: 25vw;
+        width: 33%;
     }
 }
 
@@ -203,11 +203,11 @@ h2, h3 {
        font-size: 1.2em;
     }
     .ex-grid {
-        display: grid;
-        grid-template-columns: 100%;
+        /* display: grid;
+        grid-template-columns: 100%; */
     }
     .ex-grid img {
-        width: 50vw;
+        /* width: 50vw; */
         margin: 1% auto;
     }
 }
@@ -220,8 +220,8 @@ h2, h3 {
         margin: 5vh 10vw;
     }
     .ex-grid img {
-        width: 70vw;
-        margin: 1% auto;
+        /* width: 70vw;
+        margin: 1% auto; */
     }
 }
 
