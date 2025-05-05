@@ -1,3 +1,7 @@
+const checkScreenWidth = (size = 768) => {
+    return (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) > size;
+};
+
 const removeAllDropdowns = () => {
     const links = document.querySelectorAll('.links');
     for (let link of links) {
@@ -19,72 +23,59 @@ const updateDropdown = (ele, updateText) => {
 // Contrast Dropdown
 const contrast = document.querySelector('#expandC');
 contrast.addEventListener('mouseover', () => {
-    if (getScreenWidth() > 768) {
-        updateDropdown(contrast, 'Contrast');
-    }    
+    if (!checkScreenWidth()) return;
+    updateDropdown(contrast, 'Contrast');
 });
 contrast.addEventListener('mouseout', () => {
-    if (getScreenWidth() > 768){
-        updateDropdown(contrast, 'C');
-        removeAllDropdowns();
-    }
+    if (!checkScreenWidth()) return;
+    updateDropdown(contrast, 'C');
+    removeAllDropdowns();
 });
 
 // Repetition Dropdown
 const repetition = document.querySelector('#expandR');
 repetition.addEventListener('mouseover', () =>  {
-    if (getScreenWidth() > 768) {
-        updateDropdown(repetition, 'Repetition');
-    }
+    if (!checkScreenWidth()) return;
+    updateDropdown(repetition, 'Repetition');
 });
 repetition.addEventListener('mouseout', () => {
-    if (getScreenWidth() > 768){
-        updateDropdown(repetition, 'R');
-        removeAllDropdowns();
-    }
+    if (!checkScreenWidth()) return;
+    updateDropdown(repetition, 'R');
+    removeAllDropdowns();
 });
 
 // Alignment Dropdown
 const alignment = document.querySelector('#expandA');
 alignment.addEventListener('mouseover', () => {
-    if (getScreenWidth() > 768) {
-        updateDropdown(alignment, 'Alignment');
-    }
+    if (!checkScreenWidth()) return;
+    updateDropdown(alignment, 'Alignment');
 });
 alignment.addEventListener('mouseout', () => {
-    if (getScreenWidth() > 768){
-        updateDropdown(alignment, 'A');
-        removeAllDropdowns();
-    }
+    if (!checkScreenWidth()) return;
+    updateDropdown(alignment, 'A');
+    removeAllDropdowns();
 });
+
 // Proximity Dropdown
 const proximity = document.querySelector('#expandP');
 proximity.addEventListener('mouseover', () => {
-    if (getScreenWidth() > 768) {
-        updateDropdown(proximity, 'Proximity');
-    }
+    if (!checkScreenWidth()) return;
+    updateDropdown(proximity, 'Proximity');
 });
 proximity.addEventListener('mouseout', () => {
-    if (getScreenWidth() > 768){
-        updateDropdown(proximity, 'P');
-        removeAllDropdowns();
-    }
+    if (!checkScreenWidth()) return;
+    updateDropdown(proximity, 'P');
+    removeAllDropdowns();
 });
 
 // Other Dropdown
 const other = document.querySelector('#others');
 other.addEventListener('mouseover', () => {
-    if (getScreenWidth() > 768) {
-        updateDropdown(other, '.');
-    }
+    if (!checkScreenWidth()) return;
+    updateDropdown(other, '.');
 });
 other.addEventListener('mouseout', () => {
-    if (getScreenWidth() > 768){
-        updateDropdown(other, '.');
-        removeAllDropdowns();
-    }
+    if (!checkScreenWidth()) return;
+    updateDropdown(other, '.');
+    removeAllDropdowns();
 });
-
-function getScreenWidth() {
-    return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-}
