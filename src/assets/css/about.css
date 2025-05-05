@@ -183,7 +183,7 @@ h2, h3 {
     #text-example {
         display: grid;
         grid-template-columns: 100%;
-        padding: 0;
+        padding-top: 0;
     }
     #justified-align, #right-align  {
         padding-top: 7vh;

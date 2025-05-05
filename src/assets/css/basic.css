@@ -260,8 +260,9 @@ footer h4 {
 @media screen and (max-width: 768px) {
     .dropdown {
         position: inherit;
+        cursor: pointer;
     }
-    
+
     .links {
         width: 100vw;
     }

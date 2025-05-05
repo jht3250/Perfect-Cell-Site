@@ -17,8 +17,8 @@ const updateDropdown = (ele, updateText) => {
     links.classList.toggle('active');
 
     if (checkScreenWidth()) {
-        if (updateText.length > 1) ele.classList.add('expanded');
-        else ele.classList.remove('expanded');
+        if (updateText.length > 1 || updateText === '.') ele.classList.add('expanded');
+        // else ele.classList.remove('expanded');
         ele.children[0].innerText = updateText;
     }
 };
