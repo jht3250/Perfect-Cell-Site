@@ -1,7 +1,7 @@
 <main class="practice">
     <h4>Try it yourself!</h4>
 
-    <section class="container" onload="init()">
+    <section class="container">
         <!-- <div class="editor"> -->
             <div class="left">
                 <label for="html-code">HTML</label>
