@@ -61,7 +61,6 @@ function init() {
         htmlCode.value += repetitionHTML + closeHTML;
     }
     // css code
-    cssCode.value = 
     contrastCSS =
     ".low-contrast {\n" +
     "    background-color: lightgray;\n" +
