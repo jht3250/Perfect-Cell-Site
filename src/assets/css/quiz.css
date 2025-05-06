@@ -203,6 +203,10 @@ input[type="text"].incorrect {
 }
 
 @media screen and (max-width: 480px){
+    .question h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
     button.start{
         left: 40%
     }
@@ -215,13 +219,13 @@ input[type="text"].incorrect {
         /* height: 70vh; */
     }
     .list {
-       padding-top: 20%;
+       padding-top: 3%;
     }
     .check {
-        margin-top: 10%;
+        margin-top: 5%;
     }
     .question {
-        height: 62vh;
+        height: 60vh;
     }
 }
 
