@@ -10,7 +10,7 @@ function init() {
     "<head>\n" +
     "    <meta charset=\"UTF-8\">\n" +
     "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
-    "    <title>Document</title>\n"
+    "    <title>Document</title>\n" +
     "</head>\n" +
     "<body>\n" +
     "    <h1>Good Examples of CRAP Principles</h1>\n" +
@@ -91,8 +91,10 @@ function run() {
     let output = document.getElementById("output");
 
     // run html and css in the output window
-    output.contentDocument.body.innerHTML = htmlCode.value + "<style>" + cssCode.value + "</style>";
+    output.contentDocument.body.innerHTML = htmlCode.value + "<style>" + cssCode.value + "</style>" + "<script>" + jsCode.value + "</script>";
 
     // run js in the output window
     output.contentWindow.eval(jsCode.value);
 }
+
+document.addEventListener("DOMContentLoaded", init);
