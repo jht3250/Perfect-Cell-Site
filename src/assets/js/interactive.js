@@ -1,4 +1,7 @@
+// get all the buttons for interactive examples
 let correctBtns = document.getElementsByClassName('interactive');
+
+// assign a click event for all of the buttons
 for (let btn of correctBtns) {
     btn.addEventListener('click', () => {
         let badEx = btn.parentElement.children[1];
