@@ -79,6 +79,7 @@ function init() {
     "    margin-bottom: 10px;\n" +
     "}\n" +
     "\n";
+    run();
 }
 
 function run() {
