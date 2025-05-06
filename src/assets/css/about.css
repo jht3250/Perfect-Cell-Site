@@ -40,8 +40,6 @@ h2, h3 {
 }
 
 .example p, .interactives p {
-    /* width: 80%;
-    text-align: center; */
     margin: 20px auto;
 }
 .ex-grid {
@@ -59,13 +57,8 @@ h2, h3 {
     display: none;
 }
 
-.interactive {
-    /* margin: 4% auto 0 auto; */
-}
-
 .one, .two {
     display: none;
-    /* width: 80%; */
     height: 100px;
     padding-top: 50px;
     margin: auto;
@@ -170,9 +163,6 @@ h2, h3 {
     .example img {
         width: 100%;
     }
-    img.display {
-        /* width: 70vw; */
-    }
     .ex-grid img {
         width: 33%;
     }
@@ -193,21 +183,13 @@ h2, h3 {
     #justified-align, #right-align  {
         padding-top: 7vh;
     }
-    img.display {
-        /* width: 80vw; */
-    }
 }
 
 @media screen and (max-width: 620px) {
     .big-pink{
        font-size: 1.2em;
     }
-    .ex-grid {
-        /* display: grid;
-        grid-template-columns: 100%; */
-    }
     .ex-grid img {
-        /* width: 50vw; */
         margin: 1% auto;
     }
 }
@@ -218,10 +200,6 @@ h2, h3 {
     }
     main {
         margin: 5vh 10vw;
-    }
-    .ex-grid img {
-        /* width: 70vw;
-        margin: 1% auto; */
     }
 }
 
