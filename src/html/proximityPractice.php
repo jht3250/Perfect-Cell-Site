@@ -10,6 +10,10 @@
     require_once($path . 'src/assets/inc/header.inc.php');
 ?>
 <h1>Proximity</h1>
+<script> 
+    page = 'proximity';
+    
+</script>
 <?php
     require_once($path . 'src/assets/inc/codeTest.inc.php'); 
     require_once($path . 'src/assets/inc/footer.inc.php'); 

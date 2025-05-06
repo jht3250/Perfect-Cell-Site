@@ -10,6 +10,10 @@
     require_once($path . 'src/assets/inc/header.inc.php');
 ?>
  <h1>Contrast</h1>
+ <script> 
+    page = 'contrast';
+    
+</script>
 <?php
     require_once($path . 'src/assets/inc/codeTest.inc.php'); 
     require_once($path . 'src/assets/inc/footer.inc.php'); 

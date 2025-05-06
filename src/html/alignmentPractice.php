@@ -9,6 +9,10 @@
     require_once($path . 'src/assets/inc/head.inc.php');
     require_once($path . 'src/assets/inc/header.inc.php');
 ?>
+<script> 
+    page = 'alignment';
+    
+</script>
 <h1>Alignment</h1>
 <?php
     require_once($path . 'src/assets/inc/codeTest.inc.php'); 

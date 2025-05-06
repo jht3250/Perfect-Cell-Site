@@ -10,6 +10,10 @@
     require_once($path . 'src/assets/inc/header.inc.php');
 ?>
 <h1>Repetition</h1>
+<script> 
+    page = 'repetition';
+    
+</script>
 <?php
     require_once($path . 'src/assets/inc/codeTest.inc.php'); 
     require_once($path . 'src/assets/inc/footer.inc.php'); 
