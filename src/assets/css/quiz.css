@@ -62,12 +62,9 @@ h1 {
     box-sizing: border-box;
     margin: auto;
     color: #222;
-    /* padding: 30px 0 0 30px; */
     padding: 5% 5%;
-    /* min-height: 200px; */
     height: 50vh;
     background-color: white;
-    /* height: 20%; */
 }
 
 .question h2 {
@@ -211,12 +208,10 @@ input[type="text"].incorrect {
         left: 40%
     }
     .cover img {
-        /* margin-top: 4vh; */
         width: 80vw; /*has to be same as main*/
     }
     main {
         width: 80vw; /*has to be same as .cover img*/
-        /* height: 70vh; */
     }
     .list {
        padding-top: 3%;
@@ -231,7 +226,6 @@ input[type="text"].incorrect {
 
 @media screen and (max-width: 430px){
     .cover img {
-        /* margin: 2vh 0; */
         width: 80vw; /*has to be same as main*/
     }
 }
