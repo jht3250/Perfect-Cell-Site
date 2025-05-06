@@ -50,6 +50,12 @@ footer {
     border-radius: 15px;
 }
 
+/* Output message */
+.message {
+    padding: 0;
+    margin: 1% auto 0 5%;
+}
+
 /* Question */
 h1 {
     padding-top: 5%;
@@ -63,7 +69,7 @@ h1 {
     margin: auto;
     color: #222;
     padding: 5% 5%;
-    height: 50vh;
+    padding-top: 2%;
     background-color: white;
 }
 
@@ -150,9 +156,6 @@ input[type="text"].incorrect {
     button.start{
         left: 46%
     }
-    .question {
-        height: 30vh;
-    }
 }
 @media screen and (max-width: 940px) {
     .cover img {
@@ -185,9 +188,6 @@ input[type="text"].incorrect {
         width: 60vw; /*has to be same as .cover img*/
         margin: 2% auto;
     }
-    .question {
-        height: 50vh;
-    }
 }
 
 @media screen and (max-width: 640px){
@@ -218,9 +218,6 @@ input[type="text"].incorrect {
     }
     .check {
         margin-top: 5%;
-    }
-    .question {
-        height: 60vh;
     }
 }
 
