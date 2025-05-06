@@ -112,7 +112,7 @@ h1 {
 }
 
 /* Radio and checkbox */
-.done, .correct {
+.done, .correct, .message {
     color: #8fb355;
 }
 

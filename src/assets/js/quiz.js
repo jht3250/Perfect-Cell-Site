@@ -1,6 +1,9 @@
-let questions, indexList, questionNums, questionCount, prev;
+let questions, indexList, questionNums, questionCount, prev, messageOutput;
 let corrects, selected = [];
 let current = 0;
+let attempts = 0;
+let correctlyAnswered = 0;
+let wrongs = 0;
 
 // shifts current question to the next in the given direction
 const shift = (list, cur, dir = 'right') => {
@@ -37,6 +40,9 @@ const startQuiz = () => {
 
     // remove cover
     document.getElementsByClassName('cover')[0].classList.add('hidden');
+
+    // get the message html element
+    messageOutput = document.querySelector('.message');
 
     // collect questions
     questions = document.getElementsByClassName('question');
@@ -96,18 +102,27 @@ const compareAnswers = () => {
         } else {
             document.querySelector(`label[for="${option.id}"]`).classList.add('incorrect');
             allCorrect = false;
+
+            // update wrong attempt count
+            wrongs++;
         }
     }
 
     // update the index color when all selected answers are correct
     if (allCorrect) {
         questionNums.children[current].classList.add('done');
+
+        // and update correct count
+        correctlyAnswered++;
     }
 };
 
 // checks the selected answers
 const checkAnswer = (type) => {
     let question = questions[current];
+
+    // update attempts
+    attempts++;
     
     // check answer depending on the type of question
     if (type === 'radio' || type === 'checkbox') {
@@ -145,6 +160,18 @@ const checkAnswer = (type) => {
         }
 
         // if all answers are collect, show it!
-        if (allCorrect) questionNums.children[current].classList.add('done');
+        if (allCorrect) {
+            questionNums.children[current].classList.add('done');
+
+            // and update correct count
+            correctlyAnswered++;
+        } else {
+            // update wrong attempt count
+            wrongs++;
+        }
+    }
+
+    if (correctlyAnswered === questionCount) {
+        messageOutput.textContent = `Congrats! You got all the questions correct. Accuracy: ${attempts - wrongs}/${attempts}`;
     }
 };

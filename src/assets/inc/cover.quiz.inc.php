@@ -1,5 +1,6 @@
 <main>
     <h1 class="hidden"><?php echo $h1; ?></h1>
+    <p class="message"></p>
     <section class="cover">
         <picture>
             <source media="(min-width: 769px)" srcset="../assets/images/<?php echo $coverImg; ?>">
